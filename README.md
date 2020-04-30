@@ -32,3 +32,7 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 This research was supported by the grants from the National Natural Science Foundation of China (Project No. 61401277) and ShanghaiTech University (Project No. F-0203-13-003).
 
 ## License
+
+## Contact
+If you have technical problems, please contact: lixin1@shanghaitech.edu.cn.
+For business cooperation, please contact: liangjr@shanghaitech.edu.cn.
