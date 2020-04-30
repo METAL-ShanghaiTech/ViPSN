@@ -25,7 +25,7 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 
 ## Contributors
 - Yuheng Zhao and Kang Zhao contributed early on to the hardware designs in 2017.
-- Xin Li proposed and designed the system of ViPSN in 2019. Hong Tang implemented the hardware of ICU and EMU, Li Teng and Jingying Chen helped with some important work of EMU and VSU.
+- Xin Li proposed and designed the system of ViPSN in 2019. Hong Tang implemented the hardwares of ICU and EMU, Li Teng and Jingying Chen helped with some important works of EMU and VSU.
 - Prof. Junrui Liang oversaw, funded, and originated the project.
 
 ## Funding
