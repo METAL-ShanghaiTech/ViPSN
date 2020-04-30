@@ -25,7 +25,7 @@
   </tr>
   <tr>
   <td>Resonant speaker</td>
-    <td>Type</td>
+    <td>Manufacturer</td>
     <td>ADIN-B1BT</td>
   </tr>  
   </table>
