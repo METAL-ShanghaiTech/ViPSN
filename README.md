@@ -17,4 +17,5 @@ In other words, the resonant speaker can convert the audio signal into structura
 ## Funding
 This research was supported by the grants from the National Natural Science Foundation of China (Project No. 61401277) and ShanghaiTech University (Project No. F-0203-13-003).
 
+## License
 
