@@ -20,7 +20,9 @@ It can also produces necessary energy-level indicating signals to the energy use
 The nrf52832 (Nordic Co.), a bluetooth low energy sensor node, is used to carry out sensing and transmitting functions as **EUU**.
 
 ## Related publications
-
+- Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
+- Kang Zhao, Yuheng Zhao, and Junrui Liang*, “Live Demo of A Vibration-Powered Bluetooth Sensor with Running PFC Power Conditioning,” Proceedings of the 2017 IEEE International Symposium on Circuits and Systems, Baltimore, USA, May 2017. (ISCAS 2017).
+- Kang Zhao, Yuheng Zhao, and Junrui Liang*, “A vibration-powered Bluetooth wireless sensor node with running PFC power conditioning,” Proceedings of the 2017 IEEE International Symposium on Circuits and Systems, Baltimore, USA, May 2017. (ISCAS 2017).
 
 ## Contributors
 - Yuheng ZHAO and Kang ZHAO contributed early on to the hardware designs in 2017.
