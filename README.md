@@ -11,6 +11,8 @@ Different from normal speaker architecture, it does not have a traditional diaph
 It produces sounds by vibrating the large scale hard medium. 
 In other words, the resonant speaker can convert the audio signal into structural vibration.
 
+Under the excitation, the piezoelectric transducer outputs an irregular fluctuating voltage, common ac-to-dc rectifier (**SEH**) can be connected for converting the voltage into dc, in order to power the digital electronics.
+In this work,
 
 ## Contributors
 
