@@ -29,4 +29,3 @@
     <td>ADIN-B1BT</td>
   </tr>  
   </table>
-
