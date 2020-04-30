@@ -5,7 +5,7 @@ ViPSN is a vibration-powered sensing node as a programmable IoT platform for bat
 ![overview.png](https://i.loli.net/2020/04/30/s5OMEFiSyvnZmGj.png)
 The **VSU** is composed of two parts: transducer and vibrator. The piezoelectric transducer is made of a circular low-cost piezoelectric buzzer, whose rim is fixed on the moving part of the resonant speaker. A mass is bonded in the center of the round-shape transducer. A commercial resonant speaker serves as the vibrator, which is utilized to generate the vibrations according to the records from real-world environments. Different from normal speaker architecture, it does not have a traditional diaphragm. It produces sounds by vibrating the large scale hard medium. In other words, the resonant speaker can convert the audio signal into structural vibration.
 
-Under the excitation, the piezoelectric transducer outputs an irregular fluctuating voltage, the VSU can be connected for converting the voltage into dc, in order to power the digital electronics.
+Under the excitation, the piezoelectric transducer outputs an irregular fluctuating voltage, the **VSU** can be connected for converting the voltage into dc, in order to power the digital electronics. 
 
 For **EMU**, beyond the commercial regulation chip, our design not only provides temporary capacitive energy storage for the extra harvested energy and supplies power at a constant voltage to EUU. It can also produces necessary energy-level indicating signals to the energy user for better operation under fluctuating or intermittent vibrations. A bluetooth low energy sensor node is used to carry out sensing and transmitting functions as **EUU**.
 
