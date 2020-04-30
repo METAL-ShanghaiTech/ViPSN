@@ -1,6 +1,6 @@
 # ViPSN
 ViPSN is a vibration-powered sensing node as a programmable IoT platform for battery-free sensing and transmitting. It leverages the exploitation and utilization of ambient vibration energy by using a piezoelectric transducer. The study on ViPSN provides a new paradigm for the design and operation of the battery-free IoT systems based on vibration energy harvesting technology.
-It encapsulates four units: the vibration source unit (VSU), interface circuit unit (ICU), energy management unit (EMU), and energy user unit (EUU). 
+It encapsulates four units: the vibration source unit (**VSU**), interface circuit unit (**ICU**), energy management unit (**EMU**), and energy user unit (**EUU**). 
 
 ## System overview
 The **VSU** is composed of two parts: transducer and vibrator.
@@ -12,12 +12,12 @@ It produces sounds by vibrating the large scale hard medium.
 In other words, the resonant speaker can convert the audio signal into structural vibration.
 
 Under the excitation, the piezoelectric transducer outputs an irregular fluctuating voltage, common ac-to-dc rectifier (**SEH**) can be connected for converting the voltage into dc, in order to power the digital electronics.
-In this work, *self power (SP)-paralle-SSHI*, *SP-series-SSHI*, and *SP-SECE* are also provided.
+In this work, **self power (SP)-paralle-SSHI**, **SP-series-SSHI**, and **SP-SECE** are also provided.
 
-For *EMU*, beyond the LTC3588 (Linear Technology Co.), a commercial regulation IC chip, which integrates a low-loss full-wave bridge rectifier and a high-efficiency buck converter. 
+For **EMU**, beyond the LTC3588 (Linear Technology Co.), a commercial regulation IC chip, which integrates a low-loss full-wave bridge rectifier and a high-efficiency buck converter. 
 Our design not only provides temporary capacitive energy storage for the extra harvested energy and supplies power at a constant voltage to EUU. 
 It can also produces necessary energy-level indicating signals to the energy user for better operation under fluctuating or intermittent vibrations.
-The nrf52832, a bluetooth low energy sensor node, is used to carry out sensing and transmitting functions as *EUU*.
+The nrf52832 (Nordic Co.), a bluetooth low energy sensor node, is used to carry out sensing and transmitting functions as **EUU**.
 
 ## Related publications
 
