@@ -10,6 +10,8 @@ Under the excitation, the piezoelectric transducer outputs an irregular fluctuat
 
 For **EMU**, beyond the LTC3588 (Linear Technology Co.), a commercial regulation IC chip, which integrates a low-loss full-wave bridge rectifier and a high-efficiency buck converter. Our design not only provides temporary capacitive energy storage for the extra harvested energy and supplies power at a constant voltage to EUU. It can also produces necessary energy-level indicating signals to the energy user for better operation under fluctuating or intermittent vibrations. The nrf52832 (Nordic Co.), a bluetooth low energy sensor node, is used to carry out sensing and transmitting functions as **EUU**.
 
+![overview.png](asset/s5OMEFiSyvnZmGj.png)
+
 ## Related publications
 
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
