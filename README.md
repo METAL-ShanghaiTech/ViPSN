@@ -34,6 +34,6 @@ This research was supported by the grants from the National Natural Science Foun
 ## License
 
 ## Contact
-If you have technical problems, please contact: lixin1@shanghaitech.edu.cn and tanghong@shanghaitech.edu.cn.
+If you have technical problems, please contact: lixin1@shanghaitech.edu.cn or tanghong@shanghaitech.edu.cn.
 
 For business cooperation, please contact: liangjr@shanghaitech.edu.cn.
