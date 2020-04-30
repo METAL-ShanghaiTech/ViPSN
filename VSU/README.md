@@ -1,5 +1,5 @@
 # VSU
-
+The specifications of VSU are listed in this table, the base's 3D printer case is drawn with solidworks, and saved in the folder: [3D](./3D).
 <table>
     <tr>
         <td >Unit</td> 
