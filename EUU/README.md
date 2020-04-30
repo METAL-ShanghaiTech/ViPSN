@@ -6,4 +6,3 @@ The EUU software includes the following parts:
 - Case: [bridge vibration](./software/euu/examples);
 - Case: [transient excitation](./software/euu/examples);
 - [Receiver](./software/receiver).
-
