@@ -24,8 +24,7 @@ The nrf52832 (Nordic Co.), a bluetooth low energy sensor node, is used to carry 
 
 ## Contributors
 - Yuheng ZHAO and Kang ZHAO contributed early on to the hardware designs in 2017.
-- Xin LI proposed and designed the system of ViPSN in 2019.
-- Hong TANG impeachmented the hardware of ICU and EMU, Li TENG and Jingying CHEN helped with some important work of EMU and VSU.
+- Xin LI proposed and designed the system of ViPSN in 2019. Hong TANG impeachmented the hardware of ICU and EMU, Li TENG and Jingying CHEN helped with some important work of EMU and VSU.
 - Prof. Junrui LIANG oversaw, funded, and originated the project.
 
 ## Funding
