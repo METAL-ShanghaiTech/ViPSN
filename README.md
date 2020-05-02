@@ -1,5 +1,6 @@
 # ViPSN
- <img src="https://i.loli.net/2020/05/02/xvV8wqNRm5D9AjQ.png" alt="ViPSN"  align="right" width="35%">
+<img src="https://i.loli.net/2020/05/02/xvV8wqNRm5D9AjQ.png" alt="ViPSN"  align="right" width="35%">
+
 ViPSN is a vibration-powered sensing node as a programmable IoT platform for battery-free sensing and transmitting. It leverages the exploitation and utilization of ambient vibration energy by using a piezoelectric transducer. The study on ViPSN provides a new paradigm for the design and operation of the battery-free IoT systems based on vibration energy harvesting technology. It encapsulates four units: the vibration source unit (**VSU**), interface circuit unit (**ICU**), energy management unit (**EMU**), and energy user unit (**EUU**).
 
 
