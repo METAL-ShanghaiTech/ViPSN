@@ -188,8 +188,8 @@ static void timers_init(void)
 	  APP_ERROR_CHECK(err_code);
 }
 
-#define BUTTON_DEBOUNCE_DELAY
-#define APP_GPIOTE_MAX_USERS
+#define BUTTON_DEBOUNCE_DELAY 1
+#define APP_GPIOTE_MAX_USERS 1
 static void button_handler(uint8_t pin_no, uint8_t button_action)
 {	
     if(button_action == APP_BUTTON_PUSH)

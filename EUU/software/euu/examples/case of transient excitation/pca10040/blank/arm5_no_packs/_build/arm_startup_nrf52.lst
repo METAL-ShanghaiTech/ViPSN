@@ -450,22 +450,21 @@ ies\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\.. -I..\..\..\.
 .\..\..\..\modules\nrfx\hal -I..\..\..\..\..\..\modules\nrfx\mdk -I..\config -I
 .\RTE\_nrf52832_xxaa -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\K
 eil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.17.0\Device\Include 
--IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\In
-clude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 523" 
---predefine="_RTE_ SETA 1" --predefine="NRF52 SETA 1" --predefine="BOARD_PCA100
+--predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 524" --pred
+efine="_RTE_ SETA 1" --predefine="NRF52 SETA 1" --predefine="BOARD_PCA10040 SET
+A 1" --predefine="CONFIG_GPIO_AS_PINRESET SETA 1" --predefine="FLOAT_ABI_HARD S
 
 
 
 ARM Macro Assembler    Page 8 
 
 
-40 SETA 1" --predefine="CONFIG_GPIO_AS_PINRESET SETA 1" --predefine="FLOAT_ABI_
-HARD SETA 1" --predefine="NRF52 SETA 1" --predefine="NRF52832_XXAA SETA 1" --pr
-edefine="NRF52_PAN_74 SETA 1" --predefine="SWI_DISABLE0 SETA 1" --predefine="__
-HEAP_SIZE SETA 8192" --predefine="__STACK_SIZE SETA 8192" --cpreproc_opts=-DBOA
-RD_PCA10040,-DCONFIG_GPIO_AS_PINRESET,-DFLOAT_ABI_HARD,-DNRF52,-DNRF52832_XXAA,
--DNRF52_PAN_74,-DSWI_DISABLE0,-D__HEAP_SIZE=8192,-D__STACK_SIZE=8192 --list=.\_
-build\arm_startup_nrf52.lst RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s
+ETA 1" --predefine="NRF52 SETA 1" --predefine="NRF52832_XXAA SETA 1" --predefin
+e="NRF52_PAN_74 SETA 1" --predefine="SWI_DISABLE0 SETA 1" --predefine="__HEAP_S
+IZE SETA 8192" --predefine="__STACK_SIZE SETA 8192" --cpreproc_opts=-DBOARD_PCA
+10040,-DCONFIG_GPIO_AS_PINRESET,-DFLOAT_ABI_HARD,-DNRF52,-DNRF52832_XXAA,-DNRF5
+2_PAN_74,-DSWI_DISABLE0,-D__HEAP_SIZE=8192,-D__STACK_SIZE=8192 --list=.\_build\
+arm_startup_nrf52.lst RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s
 
 
 
