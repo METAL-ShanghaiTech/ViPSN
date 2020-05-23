@@ -1128,7 +1128,7 @@
 
 // <q> APP_FIFO_ENABLED  - app_fifo - Software FIFO implementation
 #ifndef APP_FIFO_ENABLED
-#define APP_FIFO_ENABLED 1
+#define APP_FIFO_ENABLED 0
 #endif
 
 // <e> APP_UART_ENABLED - app_uart - UART driver

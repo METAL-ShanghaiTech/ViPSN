@@ -19,6 +19,10 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 #### Software design
 - Keil is requried to compile the software. 
 
+## Software Provided 
+
+  In **EUU** folder, this project just provides the Transmitter Part now. 
+
 
 ## Related publications
 - Xin Li, Li Teng, Hong Tang, and Junrui Liang*, "ViPSN: A Vibration-Powered IoT Platform", IEEE Internet of Things Journal, under review. <a name="divtop"></a>
@@ -35,6 +39,9 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 This research was supported by the grants from the National Natural Science Foundation of China (Project No. 61401277) and ShanghaiTech University (Project No. F-0203-13-003).
 
 ## License
+
+
+
 ---
 ## Contact
 If you have technical problems, please contact: lixin1@shanghaitech.edu.cn or tanghong@shanghaitech.edu.cn.

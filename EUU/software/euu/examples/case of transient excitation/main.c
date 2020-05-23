@@ -42,31 +42,39 @@ DATE: 2019-10-02-015015
 
 static nrf_esb_payload_t        tx_payload;
 static nrf_esb_payload_t        rx_payload;
-#define UART_TX_BUF_SIZE 256
+#define UART_TX_BUF_SIZE 256    //buffer size 
 #define UART_RX_BUF_SIZE 256
+
+/*
+uart handle error event 
+*/
 void uart_error_handle(app_uart_evt_t * p_event)
 {
+    //uart error event
     if (p_event->evt_type == APP_UART_COMMUNICATION_ERROR)
     {
         APP_ERROR_HANDLER(p_event->data.error_communication);
     }
+
+    //fifo error event
     else if (p_event->evt_type == APP_UART_FIFO_ERROR)
     {
         APP_ERROR_HANDLER(p_event->data.error_code);
     }
 }
-void uart_config(void)
+
+void uart_config(void)//Uart config
 {
 		uint32_t err_code;
 		const app_uart_comm_params_t comm_params =
 		{
-			RX_PIN_NUMBER,
-			TX_PIN_NUMBER,
-			RTS_PIN_NUMBER,
-			CTS_PIN_NUMBER,
+			RX_PIN_NUMBER,//uart received pin
+			TX_PIN_NUMBER,//uart transmit pin
+			RTS_PIN_NUMBER,//uart RTS pin
+			CTS_PIN_NUMBER,//uart CTS pin
 			APP_UART_FLOW_CONTROL_DISABLED,
 			false,
-			NRF_UART_BAUDRATE_115200
+			NRF_UART_BAUDRATE_115200//baudrate 115200
 		};
 		APP_UART_FIFO_INIT(&comm_params,
 													 UART_RX_BUF_SIZE,
@@ -76,40 +84,44 @@ void uart_config(void)
 													 err_code);
 		APP_ERROR_CHECK(err_code);		
 }
+
+
 void nrf_esb_event_handler(nrf_esb_evt_t const * p_event)
 {
     switch (p_event->evt_id)
     {
-			  case NRF_ESB_EVENT_TX_SUCCESS:
+        //success event
+        case NRF_ESB_EVENT_TX_SUCCESS:
             break;
-				case NRF_ESB_EVENT_TX_FAILED:
+        case NRF_ESB_EVENT_TX_FAILED:
             //printf("TX FAILED EVENT");
             (void) nrf_esb_flush_tx();
             (void) nrf_esb_start_tx();
             break;
+        //fail event
         case NRF_ESB_EVENT_RX_RECEIVED:
             //printf("RX RECEIVED EVENT");
             break;
     }
 }
-void hclocks_start( void )
+void hclocks_start( void )//high freq clock
 {
     NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;
     NRF_CLOCK->TASKS_HFCLKSTART = 1;
     while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0);
 }
-void lclocks_start( void )
+void lclocks_start( void )//low freq clock
 {
     NRF_CLOCK->EVENTS_LFCLKSTARTED = 0;
     NRF_CLOCK->TASKS_LFCLKSTART = 1;
     while (NRF_CLOCK->EVENTS_LFCLKSTARTED == 0);
 }
-void clocks_ex( void )
+void clocks_ex( void )//set clock from high freq to low freq 
 {
     NRF_CLOCK->TASKS_HFCLKSTOP = 1;
 		NRF_CLOCK->TASKS_LFCLKSTART = 1;
 }
-uint32_t esb_init( void )
+uint32_t esb_init( void )//esb init setting
 {
     uint32_t err_code;
 	  
@@ -118,8 +130,8 @@ uint32_t esb_init( void )
     uint8_t addr_prefix[8] = {0xE5, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8 };
     nrf_esb_config_t nrf_esb_config         = NRF_ESB_DEFAULT_CONFIG;	
     nrf_esb_config.protocol                 = NRF_ESB_PROTOCOL_ESB_DPL;
-    nrf_esb_config.retransmit_delay         = 600;
-    nrf_esb_config.bitrate                  = NRF_ESB_BITRATE_2MBPS;
+    nrf_esb_config.retransmit_delay         = 600;//delay of retransmit 600us
+    nrf_esb_config.bitrate                  = NRF_ESB_BITRATE_2MBPS;//transmit bitrate 2M   
     nrf_esb_config.event_handler            = nrf_esb_event_handler;
     nrf_esb_config.mode                     = NRF_ESB_MODE_PTX;
     nrf_esb_config.selective_auto_ack       = true;
@@ -134,11 +146,12 @@ uint32_t esb_init( void )
 		err_code = nrf_esb_set_rf_channel(50);
     return err_code;
 }
-static void s_tx(void)
+
+static void s_tx(void)//send data
 {
 		int32_t volatile temp=0;
 		
-				hclocks_start();			
+				hclocks_start();	//high freq clk start		
 				temp=88;
 				tx_payload.length = 1;
 				tx_payload.data[0]= temp;	
@@ -177,7 +190,7 @@ static void timers_init(void)
 }
 #define BUTTON_DEBOUNCE_DELAY			1 // Delay from a GPIOTE event until a button is reported as pushed. 
 #define APP_GPIOTE_MAX_USERS            1  // Maximum number of users of the GPIOTE handler. 
-static void button_handler(uint8_t pin_no, uint8_t button_action)
+static void button_handler(uint8_t pin_no, uint8_t button_action)  //global definition which can easily change the mode to debug
 {	
     if(button_action == APP_BUTTON_PUSH)
     {
@@ -186,7 +199,7 @@ static void button_handler(uint8_t pin_no, uint8_t button_action)
             case BUTTON_TOUCH: 
 									s_tx();
 					
-#if key_UART
+#if key_UART //for debugger
 					read_button = nrf_gpio_pin_read(BUTTON_TOUCH);	
 					printf("read_button: %d\r\n", (int)read_button); 
 #endif
