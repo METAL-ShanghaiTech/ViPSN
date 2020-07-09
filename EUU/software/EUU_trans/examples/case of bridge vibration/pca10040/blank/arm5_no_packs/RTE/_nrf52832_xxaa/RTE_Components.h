@@ -1,6 +1,6 @@
 
 /*
- * Auto generated Run-Time-Environment Component Configuration File
+ * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
  * Project: 'nrf_pwr_mgmt_pca10040' 
@@ -15,6 +15,7 @@
  * Define the Device Header File: 
  */
 #define CMSIS_device_header "nrf.h"
+
 
 
 #endif /* RTE_COMPONENTS_H */

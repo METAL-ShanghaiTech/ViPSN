@@ -3,10 +3,10 @@ NAME: Xin LI
 DATE: 2019-10-02-015015
 **/
 
-#define key_UART 0
-#define key_LED 0
+#define key_UART 1
+#define key_LED 1
 #define key_LOG 0
-#define BUTTON_TOUCH 3
+#define BUTTON_TOUCH 13
 #include <stdbool.h>
 #include <string.h>
 #include <stdint.h>
@@ -41,13 +41,21 @@ DATE: 2019-10-02-015015
 #include "nrf_log_default_backends.h"
 
 static nrf_esb_payload_t        tx_payload;
-static nrf_esb_payload_t        rx_payload;
 #define UART_TX_BUF_SIZE 256    //buffer size 
 #define UART_RX_BUF_SIZE 256
+APP_TIMER_DEF(m_led_toggle_timer_id);                                  
+#define LED_TOGGLE_INTERVAL         APP_TIMER_TICKS(1) //set led toggle interval time 
+#define BUTTON_DEBOUNCE_DELAY			1 // Delay from a GPIOTE event until a button is reported as pushed. 
+#define APP_GPIOTE_MAX_USERS            1  // Maximum number of users of the GPIOTE handler. 
+
+
+
+
 
 /*
 uart handle error event 
 */
+
 void uart_error_handle(app_uart_evt_t * p_event)
 {
     //uart error event
@@ -63,7 +71,11 @@ void uart_error_handle(app_uart_evt_t * p_event)
     }
 }
 
-void uart_config(void)//Uart config
+/*
+uart config, which is easily to debuger
+*/
+
+void uart_config(void)
 {
 		uint32_t err_code;
 		const app_uart_comm_params_t comm_params =
@@ -85,6 +97,9 @@ void uart_config(void)//Uart config
 		APP_ERROR_CHECK(err_code);		
 }
 
+/*
+ESB event handler
+*/
 
 void nrf_esb_event_handler(nrf_esb_evt_t const * p_event)
 {
@@ -94,34 +109,52 @@ void nrf_esb_event_handler(nrf_esb_evt_t const * p_event)
         case NRF_ESB_EVENT_TX_SUCCESS:
             break;
         case NRF_ESB_EVENT_TX_FAILED:
-            //printf("TX FAILED EVENT");
             (void) nrf_esb_flush_tx();
             (void) nrf_esb_start_tx();
             break;
         //fail event
         case NRF_ESB_EVENT_RX_RECEIVED:
-            //printf("RX RECEIVED EVENT");
             break;
     }
 }
-void hclocks_start( void )//high freq clock
+
+/*
+high freq clock
+*/
+
+void hclocks_start( void )
 {
     NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;
     NRF_CLOCK->TASKS_HFCLKSTART = 1;
     while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0);
 }
-void lclocks_start( void )//low freq clock
+
+/*
+low freq clock
+*/
+
+void lclocks_start( void )
 {
     NRF_CLOCK->EVENTS_LFCLKSTARTED = 0;
     NRF_CLOCK->TASKS_LFCLKSTART = 1;
     while (NRF_CLOCK->EVENTS_LFCLKSTARTED == 0);
 }
-void clocks_ex( void )//set clock from high freq to low freq 
+
+/*
+set clock from high freq to low freq 
+*/
+
+void clocks_ex( void )
 {
     NRF_CLOCK->TASKS_HFCLKSTOP = 1;
 		NRF_CLOCK->TASKS_LFCLKSTART = 1;
 }
-uint32_t esb_init( void )//esb init setting
+
+/*
+esb init setting
+*/
+
+uint32_t esb_init( void )
 {
     uint32_t err_code;
 	  
@@ -147,6 +180,11 @@ uint32_t esb_init( void )//esb init setting
     return err_code;
 }
 
+
+/*
+EBS sending data
+*/
+
 static void s_tx(void)//send data
 {
 		int32_t volatile temp=0;
@@ -157,6 +195,9 @@ static void s_tx(void)//send data
 				tx_payload.data[0]= temp;	
 				if (nrf_esb_write_payload(&tx_payload) == NRF_SUCCESS)
 				{
+#if key_LED    
+          nrf_gpio_pin_toggle(LED_1);
+#endif
 #if key_UART
 					printf("temperature: %d\r\n", (int)temp); 
 #endif
@@ -167,8 +208,7 @@ static void s_tx(void)//send data
 nrf_delay_us(200);
 clocks_ex();
 }
-APP_TIMER_DEF(m_led_toggle_timer_id);                                  
-#define LED_TOGGLE_INTERVAL         APP_TIMER_TICKS(1)  
+                              
 static void led_toggle_timeout_handler(void * p_context)
 {
 					s_tx();
@@ -179,18 +219,23 @@ static void timers_init(void)
     err_code = app_timer_init();
     APP_ERROR_CHECK(err_code);
 
-//    err_code = app_timer_create(&m_led_toggle_timer_id,
-//                                APP_TIMER_MODE_REPEATED,
-//                                led_toggle_timeout_handler);
-	
-	  err_code = app_timer_create(&m_led_toggle_timer_id,
-                                APP_TIMER_MODE_SINGLE_SHOT,
+    err_code = app_timer_create(&m_led_toggle_timer_id,
+                                APP_TIMER_MODE_REPEATED,
                                 led_toggle_timeout_handler);
+//	
+//	  err_code = app_timer_create(&m_led_toggle_timer_id,
+//                                APP_TIMER_MODE_SINGLE_SHOT,
+//                                led_toggle_timeout_handler);
 	  APP_ERROR_CHECK(err_code);
 }
-#define BUTTON_DEBOUNCE_DELAY			1 // Delay from a GPIOTE event until a button is reported as pushed. 
-#define APP_GPIOTE_MAX_USERS            1  // Maximum number of users of the GPIOTE handler. 
-static void button_handler(uint8_t pin_no, uint8_t button_action)  //global definition which can easily change the mode to debug
+
+
+
+/*
+The button is to interrupt, which can let EBS transmit data.
+*/
+
+static void button_handler(uint8_t pin_no, uint8_t button_action)
 {	
     if(button_action == APP_BUTTON_PUSH)
     {
@@ -200,6 +245,7 @@ static void button_handler(uint8_t pin_no, uint8_t button_action)  //global defi
 									s_tx();
 					
 #if key_UART //for debugger
+            uint32_t read_button;
 					read_button = nrf_gpio_pin_read(BUTTON_TOUCH);	
 					printf("read_button: %d\r\n", (int)read_button); 
 #endif
@@ -223,6 +269,8 @@ static void button_handler(uint8_t pin_no, uint8_t button_action)  //global defi
 					}
 		}
 }
+
+
 int main(void)
 {	
 #if key_LOG
@@ -242,10 +290,12 @@ int main(void)
 		static app_button_cfg_t p_button[] = { {BUTTON_TOUCH, APP_BUTTON_ACTIVE_HIGH, NRF_GPIO_PIN_NOPULL, button_handler} };
     APP_GPIOTE_INIT(APP_GPIOTE_MAX_USERS);
     app_button_init(p_button, sizeof(p_button) / sizeof(p_button[0]), BUTTON_DEBOUNCE_DELAY);                               									
+    
     app_button_enable();
-
+      
 		while(true)
     {					
+
 					//Put CPU to sleep while waiting for interrupt to save power
 					__WFI();
     }		

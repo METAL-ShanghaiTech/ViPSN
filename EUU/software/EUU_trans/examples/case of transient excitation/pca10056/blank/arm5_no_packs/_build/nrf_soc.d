@@ -1,0 +1,17 @@
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c
+.\_build\nrf_soc.o: C:\Keil_v5MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h
+.\_build\nrf_soc.o: C:\Keil_v5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\nrf.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\nrf52840.h
+.\_build\nrf_soc.o: C:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm4.h
+.\_build\nrf_soc.o: C:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h
+.\_build\nrf_soc.o: C:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h
+.\_build\nrf_soc.o: C:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
+.\_build\nrf_soc.o: C:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmSimd.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\system_nrf52840.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\nrf52840_bitfields.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\nrf51_to_nrf52840.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\nrf52_to_nrf52840.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h

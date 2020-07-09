@@ -336,7 +336,7 @@
               <MiscControls>--reduce_paths</MiscControls>
               <Define>BOARD_PCA10040 BSP_DEFINES_ONLY CONFIG_GPIO_AS_PINRESET FLOAT_ABI_HARD NRF52 NRF52832_XXAA NRF52_PAN_74 __HEAP_SIZE=8192 __STACK_SIZE=8192</Define>
               <Undefine></Undefine>
-              <IncludePath>..\config;..\..\modules\nrfx;..\..\integration\nrfx;..\..\integration\nrfx\legacy;..\..\modules\nrfx\hal;..\..\modules\nrfx\mdk;..\..\modules\nrfx\drivers\include;..\..\components\boards;..\..\components\drivers_nrf\nrf_soc_nosd;..\..\components\libraries\delay;..\..\components\libraries\util;..\..\components\libraries\strerror;..\..\components\libraries\log;..\..\components\libraries\log\src;..\..\components\libraries\experimental_section_vars;..\..\components\libraries\experimental_memobj;..\..\components\libraries\balloc;..\..\components\libraries\uart;..\..\components\libraries\fifo;..\..\components\proprietary_rf\esb</IncludePath>
+              <IncludePath>..\config;..\..\modules\nrfx;..\..\integration\nrfx;..\..\integration\nrfx\legacy;..\..\modules\nrfx\hal;..\..\modules\nrfx\mdk;..\..\modules\nrfx\drivers\include;..\..\components\boards;..\..\components\drivers_nrf\nrf_soc_nosd;..\..\components\libraries\delay;..\..\components\libraries\util;..\..\components\libraries\strerror;..\..\components\libraries\log;..\..\components\libraries\log\src;..\..\components\libraries\experimental_section_vars;..\..\components\libraries\experimental_memobj;..\..\components\libraries\balloc;..\..\components\libraries\uart;..\..\components\libraries\fifo;..\..\components\proprietary_rf\esb;..\..\..;..\..\..\config</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

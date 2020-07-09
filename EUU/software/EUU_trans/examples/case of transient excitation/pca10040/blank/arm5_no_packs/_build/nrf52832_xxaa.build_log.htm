@@ -21,24 +21,20 @@ Target DLL:      Segger\JL2CM3.dll V2.99.26.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-D:\OneDrive\LAB\ViPSN\EUU\software\euu\examples\case of transient excitation\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx
-Project File Date:  05/19/2020
+D:\OneDrive\LAB\ViPSN - ¸±±¾\EUU\software\EUU_trans\examples\case of transient excitation\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx
+Project File Date:  06/12/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'nrf52832_xxaa'
 compiling main.c...
-..\..\..\main.c(239): warning:  #1-D: last line of file ends without a newline
-  }
-..\..\..\main.c(44): warning:  #177-D: variable "rx_payload"  was declared but never referenced
-  static nrf_esb_payload_t        rx_payload;
-..\..\..\main.c(163): warning:  #177-D: function "timers_init"  was declared but never referenced
+..\..\..\main.c(216): warning:  #177-D: function "timers_init"  was declared but never referenced
   static void timers_init(void)
-..\..\..\main.c: 3 warnings, 0 errors
+..\..\..\main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=14800 RO-data=1108 RW-data=300 ZI-data=11396  
+Program Size: Code=16816 RO-data=1156 RW-data=332 ZI-data=11428  
 FromELF: creating hex file...
-".\_build\nrf52832_xxaa.axf" - 0 Error(s), 3 Warning(s).
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -62,12 +58,12 @@ Package Vendor: NordicSemiconductor
 <h2>Collection of Component Files used:</h2>
 
    * Component: NordicSemiconductor::Device:Startup:8.17.0
-      Include file:  Device\Include\system_nrf52.h
-      Source file:   Device\Source\arm\arm_startup_nrf52.s
       Source file:   Device\Source\system_nrf52.c
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Include file:  Device\Include\system_nrf52.h
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

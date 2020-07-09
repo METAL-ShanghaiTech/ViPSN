@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 ".\_build\main.o"
 ".\_build\boards.o"
 ".\_build\bsp.o"
