@@ -17,15 +17,27 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 - Altium Designer (version 16.1) is used for the PCB design.
 - Solidworks is used for 3D-printer case.
 #### Software design
-- Keil is requried to compile the software. 
+- Keil is required to compile the software. 
 
 ## Software Provided 
 
-  In **EUU** folder, this project just provides the Transmitter Part now. 
+In **VSU** folder, this project provides the [Audio](./VSU/Audio/Example) file, which is played by resonant speaker. [AudioGenerator](./VSU/Audio/AudioGenerator.m) can be edited to generate a stable audio wave. Also, the 3D model file is provided. 
+
+In **ICU** folder, here are four types circuit model, SEH, SP-P-SSHI, SP-SECE, SP-S-SSHI.
+
+In **EMU** folder, here is a pcb file.
+
+In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included. 
+
+## Problems may encountered 
+
+1. In Nordic MCU, user may notice that their power cost is dramatically larger than the paper mentioned. The possible reason is the MCU is broken so that it can not change into low power mode.
+2. If user can not open Solidworks file, the possible reason is that the version of Solidworks does not match.
 
 
 ## Related publications
 - Xin Li, Li Teng, Hong Tang, and Junrui Liang*, "ViPSN: A Vibration-Powered IoT Platform", IEEE Internet of Things Journal, under review. <a name="divtop"></a>
+- Xin Li, Hong Tang, and Junrui Liang*, “System design and implementation of a transient-motion-powered IoT sensor node”, Proceedings of the ASME 2020 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, Irvine, CA, USA, September 14–16, 2020. (SMASIS 2020).
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang, "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
 - Kang Zhao, Yuheng Zhao, and Junrui Liang*, “Live Demo of A Vibration-Powered Bluetooth Sensor with Running PFC Power Conditioning”, Proceedings of the 2017 IEEE International Symposium on Circuits and Systems, Baltimore, USA, May 2017. (ISCAS 2017).
 - Kang Zhao, Yuheng Zhao, and Junrui Liang*, “A vibration-powered Bluetooth wireless sensor node with running PFC power conditioning”, Proceedings of the 2017 IEEE International Symposium on Circuits and Systems, Baltimore, USA, May 2017. (ISCAS 2017).
@@ -37,6 +49,8 @@ For **EMU**, beyond the commercial regulation chip, our design not only provides
 
 ## Funding
 This research was supported by the grants from the National Natural Science Foundation of China (Project No. 61401277) and ShanghaiTech University (Project No. F-0203-13-003).
+
+
 
 ## License
 

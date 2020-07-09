@@ -2203,58 +2203,59 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000000   0x00000200   Data   RO         4007    RESET               arm_startup_nrf52.o
-    0x00000200   0x00000200   0x00000000   Code   RO         4048  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x00000200   0x00000200   0x00000004   Code   RO         4093    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x00000204   0x00000204   0x00000004   Code   RO         4096    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x00000208   0x00000208   0x00000000   Code   RO         4098    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x00000208   0x00000208   0x00000000   Code   RO         4100    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x00000208   0x00000208   0x00000008   Code   RO         4101    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x00000210   0x00000210   0x00000000   Code   RO         4103    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x00000210   0x00000210   0x00000000   Code   RO         4105    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x00000210   0x00000210   0x00000004   Code   RO         4094    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x00000214   0x00000214   0x000000e2   Code   RO         2252    .emb_text           nrf_atomic.o
+    0x00000000   0x00000000   0x00000200   Data   RO         4246    RESET               arm_startup_nrf52.o
+    0x00000200   0x00000200   0x00000000   Code   RO         4291  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000200   0x00000200   0x00000004   Code   RO         4336    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000204   0x00000204   0x00000004   Code   RO         4339    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000208   0x00000208   0x00000000   Code   RO         4341    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000208   0x00000208   0x00000000   Code   RO         4343    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000208   0x00000208   0x00000008   Code   RO         4344    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000210   0x00000210   0x00000000   Code   RO         4346    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000210   0x00000210   0x00000000   Code   RO         4348    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000210   0x00000210   0x00000004   Code   RO         4337    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000214   0x00000214   0x000000e2   Code   RO         2473    .emb_text           nrf_atomic.o
     0x000002f6   0x000002f6   0x00000002   PAD
-    0x000002f8   0x000002f8   0x00000024   Code   RO         4008    .text               arm_startup_nrf52.o
-    0x0000031c   0x0000031c   0x0000001e   Code   RO         4053    .text               mc_w.l(llshl.o)
+    0x000002f8   0x000002f8   0x00000024   Code   RO         4247    .text               arm_startup_nrf52.o
+    0x0000031c   0x0000031c   0x0000001e   Code   RO         4296    .text               mc_w.l(llshl.o)
     0x0000033a   0x0000033a   0x00000002   PAD
-    0x0000033c   0x0000033c   0x00000008   Code   RO         4055    .text               mc_w.l(ctype_o.o)
-    0x00000344   0x00000344   0x00000024   Code   RO         4083    .text               mc_w.l(memcpya.o)
-    0x00000368   0x00000368   0x00000024   Code   RO         4085    .text               mc_w.l(memseta.o)
-    0x0000038c   0x0000038c   0x0000000e   Code   RO         4087    .text               mc_w.l(strlen.o)
+    0x0000033c   0x0000033c   0x00000008   Code   RO         4298    .text               mc_w.l(ctype_o.o)
+    0x00000344   0x00000344   0x00000024   Code   RO         4326    .text               mc_w.l(memcpya.o)
+    0x00000368   0x00000368   0x00000024   Code   RO         4328    .text               mc_w.l(memseta.o)
+    0x0000038c   0x0000038c   0x0000000e   Code   RO         4330    .text               mc_w.l(strlen.o)
     0x0000039a   0x0000039a   0x00000002   PAD
-    0x0000039c   0x0000039c   0x00000024   Code   RO         4109    .text               mc_w.l(init.o)
-    0x000003c0   0x000003c0   0x0000003a   Code   RO         4119    .text               mc_w.l(__dczerorl.o)
+    0x0000039c   0x0000039c   0x00000024   Code   RO         4352    .text               mc_w.l(init.o)
+    0x000003c0   0x000003c0   0x0000003a   Code   RO         4362    .text               mc_w.l(__dczerorl.o)
     0x000003fa   0x000003fa   0x00000002   PAD
-    0x000003fc   0x000003fc   0x00000164   Code   RO          992    i.GPIOTE_IRQHandler  nrfx_gpiote.o
-    0x00000560   0x00000560   0x00000016   Code   RO         1993    i.NVIC_ClearPendingIRQ  app_timer.o
-    0x00000576   0x00000576   0x00000016   Code   RO         3698    i.NVIC_ClearPendingIRQ  nrf_esb.o
-    0x0000058c   0x0000058c   0x00000016   Code   RO         3699    i.NVIC_DisableIRQ   nrf_esb.o
-    0x000005a2   0x000005a2   0x00000016   Code   RO         1994    i.NVIC_EnableIRQ    app_timer.o
-    0x000005b8   0x000005b8   0x00000016   Code   RO         3700    i.NVIC_EnableIRQ    nrf_esb.o
-    0x000005ce   0x000005ce   0x00000016   Code   RO         1995    i.NVIC_SetPendingIRQ  app_timer.o
-    0x000005e4   0x000005e4   0x00000016   Code   RO         3701    i.NVIC_SetPendingIRQ  nrf_esb.o
-    0x000005fa   0x000005fa   0x00000020   Code   RO         1996    i.NVIC_SetPriority  app_timer.o
-    0x0000061a   0x0000061a   0x00000020   Code   RO         3702    i.NVIC_SetPriority  nrf_esb.o
+    0x000003fc   0x000003fc   0x00000164   Code   RO         1151    i.GPIOTE_IRQHandler  nrfx_gpiote.o
+    0x00000560   0x00000560   0x00000016   Code   RO         2199    i.NVIC_ClearPendingIRQ  app_timer.o
+    0x00000576   0x00000576   0x00000016   Code   RO         3931    i.NVIC_ClearPendingIRQ  nrf_esb.o
+    0x0000058c   0x0000058c   0x00000016   Code   RO         3932    i.NVIC_DisableIRQ   nrf_esb.o
+    0x000005a2   0x000005a2   0x00000016   Code   RO         2200    i.NVIC_EnableIRQ    app_timer.o
+    0x000005b8   0x000005b8   0x00000016   Code   RO         3933    i.NVIC_EnableIRQ    nrf_esb.o
+    0x000005ce   0x000005ce   0x00000016   Code   RO         2201    i.NVIC_SetPendingIRQ  app_timer.o
+    0x000005e4   0x000005e4   0x00000016   Code   RO         3934    i.NVIC_SetPendingIRQ  nrf_esb.o
+    0x000005fa   0x000005fa   0x00000020   Code   RO         2202    i.NVIC_SetPriority  app_timer.o
+    0x0000061a   0x0000061a   0x00000020   Code   RO         3935    i.NVIC_SetPriority  nrf_esb.o
     0x0000063a   0x0000063a   0x00000002   PAD
-    0x0000063c   0x0000063c   0x00000058   Code   RO          857    i.POWER_CLOCK_IRQHandler  nrfx_clock.o
-    0x00000694   0x00000694   0x00000058   Code   RO         3703    i.QDEC_IRQHandler   nrf_esb.o
-    0x000006ec   0x000006ec   0x0000005c   Code   RO         3704    i.RADIO_IRQHandler  nrf_esb.o
-    0x00000748   0x00000748   0x00000024   Code   RO         1997    i.RTC1_IRQHandler   app_timer.o
-    0x0000076c   0x0000076c   0x00000004   Code   RO         1998    i.SWI0_EGU0_IRQHandler  app_timer.o
-    0x00000770   0x00000770   0x0000031c   Code   RO         4016    i.SystemInit        system_nrf52.o
-    0x00000a8c   0x00000a8c   0x0000002c   Code   RO         3705    i.TIMER3_IRQHandler  nrf_esb.o
-    0x00000ab8   0x00000ab8   0x0000000c   Code   RO         1528    i.UARTE0_UART0_IRQHandler  nrfx_prs.o
-    0x00000ac4   0x00000ac4   0x0000000e   Code   RO         4113    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x00000ad2   0x00000ad2   0x00000002   Code   RO         4114    i.__scatterload_null  mc_w.l(handlers.o)
-    0x00000ad4   0x00000ad4   0x0000000e   Code   RO         4115    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x00000ae2   0x00000ae2   0x0000000c   Code   RO         3706    i.addr_conv         nrf_esb.o
+    0x0000063c   0x0000063c   0x00000058   Code   RO         1016    i.POWER_CLOCK_IRQHandler  nrfx_clock.o
+    0x00000694   0x00000694   0x00000058   Code   RO         3936    i.QDEC_IRQHandler   nrf_esb.o
+    0x000006ec   0x000006ec   0x0000005c   Code   RO         3937    i.RADIO_IRQHandler  nrf_esb.o
+    0x00000748   0x00000748   0x00000024   Code   RO         2203    i.RTC1_IRQHandler   app_timer.o
+    0x0000076c   0x0000076c   0x00000004   Code   RO         2204    i.SWI0_EGU0_IRQHandler  app_timer.o
+    0x00000770   0x00000770   0x0000031c   Code   RO         4255    i.SystemInit        system_nrf52.o
+    0x00000a8c   0x00000a8c   0x0000002c   Code   RO         3938    i.TIMER3_IRQHandler  nrf_esb.o
+    0x00000ab8   0x00000ab8   0x0000000c   Code   RO         1696    i.UARTE0_UART0_IRQHandler  nrfx_prs.o
+    0x00000ac4   0x00000ac4   0x0000000e   Code   RO         4356    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000ad2   0x00000ad2   0x00000002   Code   RO         4357    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000ad4   0x00000ad4   0x0000000e   Code   RO         4358    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000ae2   0x00000ae2   0x0000000c   Code   RO         3939    i.addr_conv         nrf_esb.o
     0x00000aee   0x00000aee   0x00000002   PAD
-    0x00000af0   0x00000af0   0x00000024   Code   RO         1756    i.app_button_enable  app_button.o
-    0x00000b14   0x00000b14   0x00000078   Code   RO         1757    i.app_button_init   app_button.o
-    0x00000b8c   0x00000b8c   0x00000084   Code   RO         1905    i.app_error_fault_handler  app_error_weak.o
-    0x00000c10   0x00000c10   0x00000016   Code   RO         1845    i.app_error_handler_bare  app_error.o
+    0x00000af0   0x00000af0   0x00000024   Code   RO         1924    i.app_button_enable  app_button.o
+    0x00000b14   0x00000b14   0x00000078   Code   RO         1925    i.app_button_init   app_button.o
+    0x00000b8c   0x00000b8c   0x00000084   Code   RO         2085    i.app_error_fault_handler  app_error_weak.o
+    0x00000c10   0x00000c10   0x00000016   Code   RO         2016    i.app_error_handler_bare  app_error.o
     0x00000c26   0x00000c26   0x00000002   PAD
+<<<<<<< HEAD
     0x00000c28   0x00000c28   0x0000003c   Code   RO         2925    i.app_gpiote_init   app_gpiote.o
     0x00000c64   0x00000c64   0x00000028   Code   RO         2001    i.app_timer_create  app_timer.o
     0x00000c8c   0x00000c8c   0x00000054   Code   RO         2002    i.app_timer_init    app_timer.o
@@ -2430,46 +2431,223 @@ Memory Map of the image
     0x00003bec   0x00003bec   0x0000002c   Code   RO         3749    i.update_rf_payload_format_esb_dpl  nrf_esb.o
     0x00003c18   0x00003c18   0x00000030   Code   RO         2018    i.user_op_alloc     app_timer.o
     0x00003c48   0x00003c48   0x00000008   PAD
+=======
+    0x00000c28   0x00000c28   0x0000003c   Code   RO         3152    i.app_gpiote_init   app_gpiote.o
+    0x00000c64   0x00000c64   0x00000024   Code   RO         2207    i.app_timer_create  app_timer.o
+    0x00000c88   0x00000c88   0x00000054   Code   RO         2208    i.app_timer_init    app_timer.o
+    0x00000cdc   0x00000cdc   0x00000080   Code   RO         2211    i.app_timer_start   app_timer.o
+    0x00000d5c   0x00000d5c   0x00000020   Code   RO         2212    i.app_timer_stop    app_timer.o
+    0x00000d7c   0x00000d7c   0x00000004   Code   RO         2372    i.app_util_critical_region_enter  app_util_platform.o
+    0x00000d80   0x00000d80   0x00000004   Code   RO         2373    i.app_util_critical_region_exit  app_util_platform.o
+    0x00000d84   0x00000d84   0x00000010   Code   RO         2374    i.app_util_disable_irq  app_util_platform.o
+    0x00000d94   0x00000d94   0x00000014   Code   RO         2375    i.app_util_enable_irq  app_util_platform.o
+    0x00000da8   0x00000da8   0x000000c8   Code   RO         3940    i.apply_address_workarounds  nrf_esb.o
+    0x00000e70   0x00000e70   0x00000088   Code   RO         1505    i.apply_config      nrfx_uart.o
+    0x00000ef8   0x00000ef8   0x00000088   Code   RO         1750    i.apply_config      nrfx_uarte.o
+    0x00000f80   0x00000f80   0x00000088   Code   RO         3429    i.buf_prealloc      nrf_log_frontend.o
+    0x00001008   0x00001008   0x0000001e   Code   RO         2688    i.buffer_add        nrf_fprintf_format.o
+    0x00001026   0x00001026   0x00000002   PAD
+    0x00001028   0x00001028   0x00000014   Code   RO         3430    i.buffer_is_empty   nrf_log_frontend.o
+    0x0000103c   0x0000103c   0x00000038   Code   RO            4    i.button_handler    main.o
+    0x00001074   0x00001074   0x0000000a   Code   RO         3941    i.bytewise_bit_swap  nrf_esb.o
+    0x0000107e   0x0000107e   0x00000002   PAD
+    0x00001080   0x00001080   0x0000001c   Code   RO         1152    i.channel_free      nrfx_gpiote.o
+    0x0000109c   0x0000109c   0x00000048   Code   RO         1153    i.channel_port_alloc  nrfx_gpiote.o
+    0x000010e4   0x000010e4   0x00000010   Code   RO         1154    i.channel_port_get  nrfx_gpiote.o
+    0x000010f4   0x000010f4   0x0000000a   Code   RO            5    i.clocks_ex         main.o
+    0x000010fe   0x000010fe   0x00000002   PAD
+    0x00001100   0x00001100   0x000000ac   Code   RO         2214    i.compare_reg_update  app_timer.o
+    0x000011ac   0x000011ac   0x00000098   Code   RO         1927    i.detection_delay_timeout_handler  app_button.o
+    0x00001244   0x00001244   0x00000014   Code   RO         3431    i.dropped_sat16_get  nrf_log_frontend.o
+    0x00001258   0x00001258   0x00000040   Code   RO         2215    i.elapsed_ticks_acquire  app_timer.o
+    0x00001298   0x00001298   0x00000090   Code   RO            6    i.esb_init          main.o
+    0x00001328   0x00001328   0x00000084   Code   RO         1928    i.gpiote_event_handler  app_button.o
+    0x000013ac   0x000013ac   0x0000001a   Code   RO            7    i.hclocks_start     main.o
+    0x000013c6   0x000013c6   0x00000002   PAD
+    0x000013c8   0x000013c8   0x000000a6   Code   RO         2689    i.int_print         nrf_fprintf_format.o
+    0x0000146e   0x0000146e   0x00000002   PAD
+    0x00001470   0x00001470   0x00000080   Code   RO         1751    i.interrupts_enable  nrfx_uarte.o
+    0x000014f0   0x000014f0   0x00000034   Code   RO         3432    i.invalid_packets_omit  nrf_log_frontend.o
+    0x00001524   0x00001524   0x0000001a   Code   RO            8    i.lclocks_start     main.o
+    0x0000153e   0x0000153e   0x00000004   Code   RO            9    i.led_toggle_timeout_handler  main.o
+    0x00001542   0x00001542   0x00000002   PAD
+    0x00001544   0x00001544   0x000000f8   Code   RO         2216    i.list_insertions_handler  app_timer.o
+    0x0000163c   0x0000163c   0x0000009c   Code   RO         3433    i.log_skip          nrf_log_frontend.o
+    0x000016d8   0x000016d8   0x0000005c   Code   RO           10    i.main              main.o
+    0x00001734   0x00001734   0x0000007e   Code   RO         2728    i.memobj_op         nrf_memobj.o
+    0x000017b2   0x000017b2   0x00000002   PAD
+    0x000017b4   0x000017b4   0x00000030   Code   RO         3434    i.module_idx_get    nrf_log_frontend.o
+    0x000017e4   0x000017e4   0x00000006   Code   RO         2475    i.nrf_atomic_flag_clear_fetch  nrf_atomic.o
+    0x000017ea   0x000017ea   0x00000006   Code   RO         2476    i.nrf_atomic_flag_set  nrf_atomic.o
+    0x000017f0   0x000017f0   0x0000000c   Code   RO         2478    i.nrf_atomic_u32_add  nrf_atomic.o
+    0x000017fc   0x000017fc   0x0000000a   Code   RO         2482    i.nrf_atomic_u32_fetch_and  nrf_atomic.o
+    0x00001806   0x00001806   0x0000000a   Code   RO         2484    i.nrf_atomic_u32_fetch_store  nrf_atomic.o
+    0x00001810   0x00001810   0x0000000c   Code   RO         2488    i.nrf_atomic_u32_or  nrf_atomic.o
+    0x0000181c   0x0000181c   0x0000000c   Code   RO         2490    i.nrf_atomic_u32_sub  nrf_atomic.o
+    0x00001828   0x00001828   0x0000003e   Code   RO         2612    i.nrf_balloc_alloc  nrf_balloc.o
+    0x00001866   0x00001866   0x0000002a   Code   RO         2613    i.nrf_balloc_free   nrf_balloc.o
+    0x00001890   0x00001890   0x00000010   Code   RO         1155    i.nrf_bitmask_bit_is_set  nrfx_gpiote.o
+    0x000018a0   0x000018a0   0x00000014   Code   RO         1156    i.nrf_bitmask_bit_set  nrfx_gpiote.o
+    0x000018b4   0x000018b4   0x0000000e   Code   RO         1017    i.nrf_clock_event_check  nrfx_clock.o
+    0x000018c2   0x000018c2   0x00000010   Code   RO         1018    i.nrf_clock_event_clear  nrfx_clock.o
+    0x000018d2   0x000018d2   0x00000002   PAD
+    0x000018d4   0x000018d4   0x00000068   Code   RO         1453    i.nrf_drv_uart_init  nrf_drv_uart.o
+    0x0000193c   0x0000193c   0x00000044   Code   RO         3943    i.nrf_esb_disable   nrf_esb.o
+    0x00001980   0x00001980   0x0000001a   Code   RO           11    i.nrf_esb_event_handler  main.o
+    0x0000199a   0x0000199a   0x00000002   PAD
+    0x0000199c   0x0000199c   0x00000030   Code   RO         3946    i.nrf_esb_flush_tx  nrf_esb.o
+    0x000019cc   0x000019cc   0x0000016c   Code   RO         3948    i.nrf_esb_init      nrf_esb.o
+    0x00001b38   0x00001b38   0x00000070   Code   RO         3954    i.nrf_esb_set_base_address_0  nrf_esb.o
+    0x00001ba8   0x00001ba8   0x0000009c   Code   RO         3955    i.nrf_esb_set_base_address_1  nrf_esb.o
+    0x00001c44   0x00001c44   0x0000009c   Code   RO         3957    i.nrf_esb_set_prefixes  nrf_esb.o
+    0x00001ce0   0x00001ce0   0x00000020   Code   RO         3960    i.nrf_esb_set_rf_channel  nrf_esb.o
+    0x00001d00   0x00001d00   0x00000044   Code   RO         3962    i.nrf_esb_skip_tx   nrf_esb.o
+    0x00001d44   0x00001d44   0x00000028   Code   RO         3964    i.nrf_esb_start_tx  nrf_esb.o
+    0x00001d6c   0x00001d6c   0x000000ac   Code   RO         3968    i.nrf_esb_write_payload  nrf_esb.o
+    0x00001e18   0x00001e18   0x0000001a   Code   RO         2649    i.nrf_fprintf       nrf_fprintf.o
+    0x00001e32   0x00001e32   0x00000018   Code   RO         2650    i.nrf_fprintf_buffer_flush  nrf_fprintf.o
+    0x00001e4a   0x00001e4a   0x000001da   Code   RO         2690    i.nrf_fprintf_fmt   nrf_fprintf_format.o
+    0x00002024   0x00002024   0x00000024   Code   RO         1157    i.nrf_gpio_cfg      nrfx_gpiote.o
+    0x00002048   0x00002048   0x00000024   Code   RO         1506    i.nrf_gpio_cfg      nrfx_uart.o
+    0x0000206c   0x0000206c   0x00000024   Code   RO         1752    i.nrf_gpio_cfg      nrfx_uarte.o
+    0x00002090   0x00002090   0x00000012   Code   RO         1507    i.nrf_gpio_cfg_default  nrfx_uart.o
+    0x000020a2   0x000020a2   0x00000012   Code   RO         1753    i.nrf_gpio_cfg_default  nrfx_uarte.o
+    0x000020b4   0x000020b4   0x00000012   Code   RO         1508    i.nrf_gpio_cfg_input  nrfx_uart.o
+    0x000020c6   0x000020c6   0x00000012   Code   RO         1754    i.nrf_gpio_cfg_input  nrfx_uarte.o
+    0x000020d8   0x000020d8   0x00000014   Code   RO         1509    i.nrf_gpio_cfg_output  nrfx_uart.o
+    0x000020ec   0x000020ec   0x00000014   Code   RO         1755    i.nrf_gpio_cfg_output  nrfx_uarte.o
+    0x00002100   0x00002100   0x00000022   Code   RO         1159    i.nrf_gpio_cfg_sense_set  nrfx_gpiote.o
+    0x00002122   0x00002122   0x00000002   PAD
+    0x00002124   0x00002124   0x00000028   Code   RO         1160    i.nrf_gpio_ports_read  nrfx_gpiote.o
+    0x0000214c   0x0000214c   0x00000014   Code   RO         1161    i.nrf_gpiote_event_clear  nrfx_gpiote.o
+    0x00002160   0x00002160   0x00000010   Code   RO         1162    i.nrf_gpiote_event_is_set  nrfx_gpiote.o
+    0x00002170   0x00002170   0x000000c8   Code   RO         3283    i.nrf_log_backend_serial_put  nrf_log_backend_serial.o
+    0x00002238   0x00002238   0x00000002   Code   RO         3323    i.nrf_log_backend_uart_flush  nrf_log_backend_uart.o
+    0x0000223a   0x0000223a   0x00000002   PAD
+    0x0000223c   0x0000223c   0x0000002c   Code   RO         3325    i.nrf_log_backend_uart_panic_set  nrf_log_backend_uart.o
+    0x00002268   0x00002268   0x00000018   Code   RO         3326    i.nrf_log_backend_uart_put  nrf_log_backend_uart.o
+    0x00002280   0x00002280   0x00000030   Code   RO         3437    i.nrf_log_color_id_get  nrf_log_frontend.o
+    0x000022b0   0x000022b0   0x00000230   Code   RO         3438    i.nrf_log_frontend_dequeue  nrf_log_frontend.o
+    0x000024e0   0x000024e0   0x00000008   Code   RO         3440    i.nrf_log_frontend_std_0  nrf_log_frontend.o
+    0x000024e8   0x000024e8   0x000000ac   Code   RO         3615    i.nrf_log_hexdump_entry_process  nrf_log_str_formatter.o
+    0x00002594   0x00002594   0x00000014   Code   RO         3448    i.nrf_log_module_cnt_get  nrf_log_frontend.o
+    0x000025a8   0x000025a8   0x0000001c   Code   RO         3451    i.nrf_log_module_name_get  nrf_log_frontend.o
+    0x000025c4   0x000025c4   0x0000002c   Code   RO         3452    i.nrf_log_panic     nrf_log_frontend.o
+    0x000025f0   0x000025f0   0x000000b6   Code   RO         3616    i.nrf_log_std_entry_process  nrf_log_str_formatter.o
+    0x000026a6   0x000026a6   0x00000060   Code   RO         2729    i.nrf_memobj_alloc  nrf_memobj.o
+    0x00002706   0x00002706   0x00000032   Code   RO         2730    i.nrf_memobj_free   nrf_memobj.o
+    0x00002738   0x00002738   0x00000008   Code   RO         2731    i.nrf_memobj_get    nrf_memobj.o
+    0x00002740   0x00002740   0x0000001e   Code   RO         2733    i.nrf_memobj_put    nrf_memobj.o
+    0x0000275e   0x0000275e   0x00000010   Code   RO         2734    i.nrf_memobj_read   nrf_memobj.o
+    0x0000276e   0x0000276e   0x00000010   Code   RO         2735    i.nrf_memobj_write  nrf_memobj.o
+    0x0000277e   0x0000277e   0x0000000a   Code   RO         1510    i.nrf_uart_event_check  nrfx_uart.o
+    0x00002788   0x00002788   0x0000000c   Code   RO         1511    i.nrf_uart_event_clear  nrfx_uart.o
+    0x00002794   0x00002794   0x0000000c   Code   RO         1512    i.nrf_uart_int_enable_check  nrfx_uart.o
+    0x000027a0   0x000027a0   0x0000000a   Code   RO         1756    i.nrf_uarte_event_check  nrfx_uarte.o
+    0x000027aa   0x000027aa   0x0000000c   Code   RO         1757    i.nrf_uarte_event_clear  nrfx_uarte.o
+    0x000027b6   0x000027b6   0x00000002   PAD
+    0x000027b8   0x000027b8   0x00000010   Code   RO         2217    i.nrfx_coredep_delay_us  app_timer.o
+    0x000027c8   0x000027c8   0x000000a4   Code   RO         1167    i.nrfx_gpiote_in_event_enable  nrfx_gpiote.o
+    0x0000286c   0x0000286c   0x000000d0   Code   RO         1168    i.nrfx_gpiote_in_init  nrfx_gpiote.o
+    0x0000293c   0x0000293c   0x00000014   Code   RO         1169    i.nrfx_gpiote_in_is_set  nrfx_gpiote.o
+    0x00002950   0x00002950   0x00000070   Code   RO         1171    i.nrfx_gpiote_init  nrfx_gpiote.o
+    0x000029c0   0x000029c0   0x00000014   Code   RO         1172    i.nrfx_gpiote_is_init  nrfx_gpiote.o
+    0x000029d4   0x000029d4   0x00000010   Code   RO         1758    i.nrfx_is_in_ram    nrfx_uarte.o
+    0x000029e4   0x000029e4   0x00000030   Code   RO         1697    i.nrfx_prs_acquire  nrfx_prs.o
+    0x00002a14   0x00002a14   0x00000012   Code   RO         1698    i.nrfx_prs_release  nrfx_prs.o
+    0x00002a26   0x00002a26   0x00000002   PAD
+    0x00002a28   0x00002a28   0x00000010   Code   RO         1513    i.nrfx_uart_0_irq_handler  nrfx_uart.o
+    0x00002a38   0x00002a38   0x000000d4   Code   RO         1515    i.nrfx_uart_init    nrfx_uart.o
+    0x00002b0c   0x00002b0c   0x000000a4   Code   RO         1521    i.nrfx_uart_tx      nrfx_uart.o
+    0x00002bb0   0x00002bb0   0x00000020   Code   RO         1523    i.nrfx_uart_tx_in_progress  nrfx_uart.o
+    0x00002bd0   0x00002bd0   0x000000b4   Code   RO         1524    i.nrfx_uart_uninit  nrfx_uart.o
+    0x00002c84   0x00002c84   0x00000010   Code   RO         1759    i.nrfx_uarte_0_irq_handler  nrfx_uarte.o
+    0x00002c94   0x00002c94   0x0000006c   Code   RO         1761    i.nrfx_uarte_init   nrfx_uarte.o
+    0x00002d00   0x00002d00   0x00000090   Code   RO         1765    i.nrfx_uarte_tx     nrfx_uarte.o
+    0x00002d90   0x00002d90   0x0000001c   Code   RO         1767    i.nrfx_uarte_tx_in_progress  nrfx_uarte.o
+    0x00002dac   0x00002dac   0x000000b0   Code   RO         1768    i.nrfx_uarte_uninit  nrfx_uarte.o
+    0x00002e5c   0x00002e5c   0x00000080   Code   RO         3971    i.on_radio_disabled_tx  nrf_esb.o
+    0x00002edc   0x00002edc   0x0000003c   Code   RO         3972    i.on_radio_disabled_tx_noack  nrf_esb.o
+    0x00002f18   0x00002f18   0x00000134   Code   RO         3973    i.on_radio_disabled_tx_wait_for_ack  nrf_esb.o
+    0x0000304c   0x0000304c   0x00000018   Code   RO         1188    i.pin_in_use_by_port  nrfx_gpiote.o
+    0x00003064   0x00003064   0x00000018   Code   RO         1189    i.pin_in_use_by_te  nrfx_gpiote.o
+    0x0000307c   0x0000307c   0x0000003c   Code   RO         3618    i.postfix_process   nrf_log_str_formatter.o
+    0x000030b8   0x000030b8   0x00000098   Code   RO         3619    i.prefix_process    nrf_log_str_formatter.o
+    0x00003150   0x00003150   0x00000018   Code   RO         1699    i.prs_box_get       nrfx_prs.o
+    0x00003168   0x00003168   0x0000001c   Code   RO         3974    i.reset_fifos       nrf_esb.o
+    0x00003184   0x00003184   0x0000003c   Code   RO         2218    i.rtc1_stop         app_timer.o
+    0x000031c0   0x000031c0   0x00000032   Code   RO         1525    i.rx_byte           nrfx_uart.o
+    0x000031f2   0x000031f2   0x00000016   Code   RO         1526    i.rx_done_event     nrfx_uart.o
+    0x00003208   0x00003208   0x00000018   Code   RO         1769    i.rx_done_event     nrfx_uarte.o
+    0x00003220   0x00003220   0x00000098   Code   RO         3975    i.rx_fifo_push_rfbuf  nrf_esb.o
+    0x000032b8   0x000032b8   0x00000068   Code   RO           12    i.s_tx              main.o
+    0x00003320   0x00003320   0x00000040   Code   RO         3327    i.serial_tx         nrf_log_backend_uart.o
+    0x00003360   0x00003360   0x00000114   Code   RO         3976    i.start_tx_transaction  nrf_esb.o
+    0x00003474   0x00003474   0x0000008c   Code   RO         3454    i.std_n             nrf_log_frontend.o
+    0x00003500   0x00003500   0x00000080   Code   RO         2219    i.timer_list_handler  app_timer.o
+    0x00003580   0x00003580   0x0000003c   Code   RO         2220    i.timer_list_insert  app_timer.o
+    0x000035bc   0x000035bc   0x00000060   Code   RO         2221    i.timer_list_remove  app_timer.o
+    0x0000361c   0x0000361c   0x00000040   Code   RO         2222    i.timer_stop_op_schedule  app_timer.o
+    0x0000365c   0x0000365c   0x00000074   Code   RO         2223    i.timer_timeouts_check  app_timer.o
+    0x000036d0   0x000036d0   0x00000020   Code   RO         1528    i.tx_byte           nrfx_uart.o
+    0x000036f0   0x000036f0   0x0000001a   Code   RO         1529    i.tx_done_event     nrfx_uart.o
+    0x0000370a   0x0000370a   0x00000002   PAD
+    0x0000370c   0x0000370c   0x00000030   Code   RO         1454    i.uart_evt_handler  nrf_drv_uart.o
+    0x0000373c   0x0000373c   0x0000000c   Code   RO         3328    i.uart_evt_handler  nrf_log_backend_uart.o
+    0x00003748   0x00003748   0x00000050   Code   RO         3329    i.uart_init         nrf_log_backend_uart.o
+    0x00003798   0x00003798   0x00000128   Code   RO         1530    i.uart_irq_handler  nrfx_uart.o
+    0x000038c0   0x000038c0   0x00000030   Code   RO         1455    i.uarte_evt_handler  nrf_drv_uart.o
+    0x000038f0   0x000038f0   0x000000f4   Code   RO         1770    i.uarte_irq_handler  nrfx_uarte.o
+    0x000039e4   0x000039e4   0x000000b4   Code   RO         2691    i.unsigned_print    nrf_fprintf_format.o
+    0x00003a98   0x00003a98   0x00000050   Code   RO         3977    i.update_radio_addresses  nrf_esb.o
+    0x00003ae8   0x00003ae8   0x00000038   Code   RO         3978    i.update_radio_bitrate  nrf_esb.o
+    0x00003b20   0x00003b20   0x00000088   Code   RO         3979    i.update_radio_parameters  nrf_esb.o
+    0x00003ba8   0x00003ba8   0x00000014   Code   RO         3980    i.update_radio_tx_power  nrf_esb.o
+    0x00003bbc   0x00003bbc   0x0000002c   Code   RO         3981    i.update_rf_payload_format_esb  nrf_esb.o
+    0x00003be8   0x00003be8   0x0000002c   Code   RO         3982    i.update_rf_payload_format_esb_dpl  nrf_esb.o
+    0x00003c14   0x00003c14   0x00000030   Code   RO         2224    i.user_op_alloc     app_timer.o
+    0x00003c44   0x00003c44   0x0000000c   PAD
+>>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
     0x00003c50   0x00003c50   0x00000048   Data   RO           17    .constdata          main.o
-    0x00003c98   0x00003c98   0x00000004   Data   RO         1032    .constdata          nrfx_gpiote.o
-    0x00003c9c   0x00003c9c   0x00000004   Data   RO         1365    .constdata          nrfx_uart.o
-    0x00003ca0   0x00003ca0   0x00000004   Data   RO         1605    .constdata          nrfx_uarte.o
-    0x00003ca4   0x00003ca4   0x00000008   Data   RO         1762    .constdata          app_button.o
+    0x00003c98   0x00003c98   0x00000004   Data   RO         1191    .constdata          nrfx_gpiote.o
+    0x00003c9c   0x00003c9c   0x00000004   Data   RO         1533    .constdata          nrfx_uart.o
+    0x00003ca0   0x00003ca0   0x00000004   Data   RO         1773    .constdata          nrfx_uarte.o
+    0x00003ca4   0x00003ca4   0x00000008   Data   RO         1930    .constdata          app_button.o
     0x00003cac   0x00003cac   0x00000004   PAD
-    0x00003cb0   0x00003cb0   0x00000006   Data   RO         2020    .constdata          app_timer.o
-    0x00003cb6   0x00003cb6   0x00000010   Data   RO         2471    .constdata          nrf_fprintf_format.o
+    0x00003cb0   0x00003cb0   0x00000006   Data   RO         2226    .constdata          app_timer.o
+    0x00003cb6   0x00003cb6   0x00000010   Data   RO         2692    .constdata          nrf_fprintf_format.o
     0x00003cc6   0x00003cc6   0x00000002   PAD
-    0x00003cc8   0x00003cc8   0x0000000c   Data   RO         3101    .constdata          nrf_log_backend_uart.o
-    0x00003cd4   0x00003cd4   0x00000020   Data   RO         3102    .constdata          nrf_log_backend_uart.o
-    0x00003cf4   0x00003cf4   0x00000081   Data   RO         4056    .constdata          mc_w.l(ctype_o.o)
+    0x00003cc8   0x00003cc8   0x0000000c   Data   RO         3331    .constdata          nrf_log_backend_uart.o
+    0x00003cd4   0x00003cd4   0x00000020   Data   RO         3332    .constdata          nrf_log_backend_uart.o
+    0x00003cf4   0x00003cf4   0x00000081   Data   RO         4299    .constdata          mc_w.l(ctype_o.o)
     0x00003d75   0x00003d75   0x00000003   PAD
-    0x00003d78   0x00003d78   0x00000004   Data   RO         4057    .constdata          mc_w.l(ctype_o.o)
-    0x00003d7c   0x00003d7c   0x00000066   Data   RO         3387    .conststring        nrf_log_str_formatter.o
+    0x00003d78   0x00003d78   0x00000004   Data   RO         4300    .constdata          mc_w.l(ctype_o.o)
+    0x00003d7c   0x00003d7c   0x00000066   Data   RO         3620    .conststring        nrf_log_str_formatter.o
     0x00003de2   0x00003de2   0x00000002   PAD
-    0x00003de4   0x00003de4   0x00000006   Data   RO          627    .conststrlit        nrf_drv_clock.o
+    0x00003de4   0x00003de4   0x00000006   Data   RO          735    .conststrlit        nrf_drv_clock.o
     0x00003dea   0x00003dea   0x00000002   PAD
-    0x00003dec   0x00003dec   0x00000006   Data   RO          874    .conststrlit        nrfx_clock.o
+    0x00003dec   0x00003dec   0x00000006   Data   RO         1033    .conststrlit        nrfx_clock.o
     0x00003df2   0x00003df2   0x00000002   PAD
-    0x00003df4   0x00003df4   0x00000007   Data   RO         1036    .conststrlit        nrfx_gpiote.o
+    0x00003df4   0x00003df4   0x00000007   Data   RO         1195    .conststrlit        nrfx_gpiote.o
     0x00003dfb   0x00003dfb   0x00000001   PAD
-    0x00003dfc   0x00003dfc   0x00000005   Data   RO         1368    .conststrlit        nrfx_uart.o
+    0x00003dfc   0x00003dfc   0x00000005   Data   RO         1536    .conststrlit        nrfx_uart.o
     0x00003e01   0x00003e01   0x00000003   PAD
-    0x00003e04   0x00003e04   0x00000004   Data   RO         1533    .conststrlit        nrfx_prs.o
-    0x00003e08   0x00003e08   0x00000006   Data   RO         1608    .conststrlit        nrfx_uarte.o
+    0x00003e04   0x00003e04   0x00000004   Data   RO         1701    .conststrlit        nrfx_prs.o
+    0x00003e08   0x00003e08   0x00000006   Data   RO         1776    .conststrlit        nrfx_uarte.o
     0x00003e0e   0x00003e0e   0x00000002   PAD
-    0x00003e10   0x00003e10   0x00000011   Data   RO         3161    .conststrlit        nrf_log_default_backends.o
+    0x00003e10   0x00003e10   0x00000011   Data   RO         3391    .conststrlit        nrf_log_default_backends.o
     0x00003e21   0x00003e21   0x00000003   PAD
-    0x00003e24   0x00003e24   0x00000004   Data   RO         3227    .conststrlit        nrf_log_frontend.o
-    0x00003e28   0x00003e28   0x00000020   Data   RO         4111    Region$$Table       anon$$obj.o
-    0x00003e48   0x00003e48   0x00000010   Data   RO         3163    log_backends        nrf_log_default_backends.o
-    0x00003e58   0x00003e58   0x00000008   Data   RO          628    log_const_data      nrf_drv_clock.o
-    0x00003e60   0x00003e60   0x00000008   Data   RO          876    log_const_data      nrfx_clock.o
-    0x00003e68   0x00003e68   0x00000008   Data   RO         1037    log_const_data      nrfx_gpiote.o
-    0x00003e70   0x00003e70   0x00000008   Data   RO         1369    log_const_data      nrfx_uart.o
-    0x00003e78   0x00003e78   0x00000008   Data   RO         1535    log_const_data      nrfx_prs.o
-    0x00003e80   0x00003e80   0x00000008   Data   RO         1609    log_const_data      nrfx_uarte.o
-    0x00003e88   0x00003e88   0x00000008   Data   RO         3230    log_const_data      nrf_log_frontend.o
-    0x00003e90   0x00003e90   0x00000014   Data   RO         3231    nrf_balloc          nrf_log_frontend.o
+    0x00003e24   0x00003e24   0x00000004   Data   RO         3460    .conststrlit        nrf_log_frontend.o
+    0x00003e28   0x00003e28   0x00000020   Data   RO         4354    Region$$Table       anon$$obj.o
+    0x00003e48   0x00003e48   0x00000010   Data   RO         3393    log_backends        nrf_log_default_backends.o
+    0x00003e58   0x00003e58   0x00000008   Data   RO          736    log_const_data      nrf_drv_clock.o
+    0x00003e60   0x00003e60   0x00000008   Data   RO         1035    log_const_data      nrfx_clock.o
+    0x00003e68   0x00003e68   0x00000008   Data   RO         1196    log_const_data      nrfx_gpiote.o
+    0x00003e70   0x00003e70   0x00000008   Data   RO         1537    log_const_data      nrfx_uart.o
+    0x00003e78   0x00003e78   0x00000008   Data   RO         1703    log_const_data      nrfx_prs.o
+    0x00003e80   0x00003e80   0x00000008   Data   RO         1777    log_const_data      nrfx_uarte.o
+    0x00003e88   0x00003e88   0x00000008   Data   RO         3463    log_const_data      nrf_log_frontend.o
+    0x00003e90   0x00003e90   0x00000014   Data   RO         3464    nrf_balloc          nrf_log_frontend.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00003ea4, Size: 0x00002db0, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00000058])
@@ -2477,35 +2655,35 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   COMPRESSED   0x00000008   Data   RW           18    .data               main.o
-    0x20000008   COMPRESSED   0x00000008   Data   RW          875    .data               nrfx_clock.o
-    0x20000010   COMPRESSED   0x0000000c   Data   RW         1288    .data               nrf_drv_uart.o
-    0x2000001c   COMPRESSED   0x00000008   Data   RW         1534    .data               nrfx_prs.o
+    0x20000008   COMPRESSED   0x00000008   Data   RW         1034    .data               nrfx_clock.o
+    0x20000010   COMPRESSED   0x0000000c   Data   RW         1456    .data               nrf_drv_uart.o
+    0x2000001c   COMPRESSED   0x00000008   Data   RW         1702    .data               nrfx_prs.o
     0x20000024   COMPRESSED   0x00000004   PAD
-    0x20000028   COMPRESSED   0x00000020   Data   RW         1763    .data               app_button.o
-    0x20000048   COMPRESSED   0x00000014   Data   RW         2021    .data               app_timer.o
-    0x2000005c   COMPRESSED   0x00000004   Data   RW         2169    .data               app_util_platform.o
-    0x20000060   COMPRESSED   0x00000010   Data   RW         2940    .data               app_gpiote.o
-    0x20000070   COMPRESSED   0x00000018   Data   RW         3103    .data               nrf_log_backend_uart.o
-    0x20000088   COMPRESSED   0x00000008   Data   RW         3162    .data               nrf_log_default_backends.o
-    0x20000090   COMPRESSED   0x00000008   Data   RW         3228    .data               nrf_log_frontend.o
-    0x20000098   COMPRESSED   0x00000008   Data   RW         3229    .data               nrf_log_frontend.o
-    0x200000a0   COMPRESSED   0x00000040   Data   RW         3388    .data               nrf_log_str_formatter.o
-    0x200000e0   COMPRESSED   0x00000048   Data   RW         3751    .data               nrf_esb.o
-    0x20000128   COMPRESSED   0x00000004   Data   RW         4017    .data               system_nrf52.o
+    0x20000028   COMPRESSED   0x00000020   Data   RW         1931    .data               app_button.o
+    0x20000048   COMPRESSED   0x00000014   Data   RW         2227    .data               app_timer.o
+    0x2000005c   COMPRESSED   0x00000004   Data   RW         2378    .data               app_util_platform.o
+    0x20000060   COMPRESSED   0x00000010   Data   RW         3167    .data               app_gpiote.o
+    0x20000070   COMPRESSED   0x00000018   Data   RW         3333    .data               nrf_log_backend_uart.o
+    0x20000088   COMPRESSED   0x00000008   Data   RW         3392    .data               nrf_log_default_backends.o
+    0x20000090   COMPRESSED   0x00000008   Data   RW         3461    .data               nrf_log_frontend.o
+    0x20000098   COMPRESSED   0x00000008   Data   RW         3462    .data               nrf_log_frontend.o
+    0x200000a0   COMPRESSED   0x00000040   Data   RW         3621    .data               nrf_log_str_formatter.o
+    0x200000e0   COMPRESSED   0x00000048   Data   RW         3984    .data               nrf_esb.o
+    0x20000128   COMPRESSED   0x00000004   Data   RW         4256    .data               system_nrf52.o
     0x2000012c        -       0x00000020   Zero   RW           15    .bss                main.o
     0x2000014c        -       0x0000023d   Zero   RW           16    .bss                main.o
     0x20000389   COMPRESSED   0x00000003   PAD
-    0x2000038c        -       0x0000005c   Zero   RW         1031    .bss                nrfx_gpiote.o
-    0x200003e8        -       0x0000002c   Zero   RW         1363    .bss                nrfx_uart.o
-    0x20000414        -       0x00000024   Zero   RW         1603    .bss                nrfx_uarte.o
-    0x20000438        -       0x00000020   Zero   RW         1761    .bss                app_button.o
-    0x20000458        -       0x0000010c   Zero   RW         2019    .bss                app_timer.o
-    0x20000564        -       0x00000040   Zero   RW         3100    .bss                nrf_log_backend_uart.o
-    0x200005a4        -       0x000000c0   Zero   RW         3222    .bss                nrf_log_frontend.o
-    0x20000664        -       0x00000424   Zero   RW         3225    .bss                nrf_log_frontend.o
-    0x20000a88        -       0x00000324   Zero   RW         3750    .bss                nrf_esb.o
+    0x2000038c        -       0x0000005c   Zero   RW         1190    .bss                nrfx_gpiote.o
+    0x200003e8        -       0x0000002c   Zero   RW         1531    .bss                nrfx_uart.o
+    0x20000414        -       0x00000024   Zero   RW         1771    .bss                nrfx_uarte.o
+    0x20000438        -       0x00000020   Zero   RW         1929    .bss                app_button.o
+    0x20000458        -       0x0000010c   Zero   RW         2225    .bss                app_timer.o
+    0x20000564        -       0x00000040   Zero   RW         3330    .bss                nrf_log_backend_uart.o
+    0x200005a4        -       0x000000c0   Zero   RW         3455    .bss                nrf_log_frontend.o
+    0x20000664        -       0x00000424   Zero   RW         3458    .bss                nrf_log_frontend.o
+    0x20000a88        -       0x00000324   Zero   RW         3983    .bss                nrf_esb.o
     0x20000dac   COMPRESSED   0x00000004   PAD
-    0x20000db0        -       0x00002000   Zero   RW         4005    STACK               arm_startup_nrf52.o
+    0x20000db0        -       0x00002000   Zero   RW         4244    STACK               arm_startup_nrf52.o
 
 
 ==============================================================================
@@ -2515,6 +2693,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
+<<<<<<< HEAD
        440         36          8         32         32      43382   app_button.o
         22          0          0          0          0       2457   app_error.o
        132         46          0          0          0      27465   app_error_weak.o
@@ -2550,6 +2729,44 @@ Image component sizes
 
     ----------------------------------------------------------------------
      14654       1264        972        300      11396     556647   Object Totals
+=======
+       440         36          8         32         32      46482   app_button.o
+        22          0          0          0          0       4641   app_error.o
+       132         46          0          0          0      35734   app_error_weak.o
+        60          4          0         16          0      12038   app_gpiote.o
+         0          0          0          0          0      36674   app_scheduler.o
+      1490        120          6         20        268      48135   app_timer.o
+         0          0          0          0          0      11056   app_uart_fifo.o
+        44         10          0          4          0       3268   app_util_platform.o
+        36          8        512          0       8192        916   arm_startup_nrf52.o
+         0          0          0          0          0      36580   boards.o
+         0          0          0          0          0       1520   bsp.o
+       488         70         72          8        605      58108   main.o
+       294          0          0          0          0       7771   nrf_atomic.o
+       104          0          0          0          0       2746   nrf_balloc.o
+         0          0         14          0          0       6466   nrf_drv_clock.o
+       200         26          0         12          0      17764   nrf_drv_uart.o
+      3114        416          0         72        804      32824   nrf_esb.o
+        50          0          0          0          0       3493   nrf_fprintf.o
+       850          4         16          0          0       5430   nrf_fprintf_format.o
+       200          0          0          0          0      11497   nrf_log_backend_serial.o
+       226         44         44         24         64       9230   nrf_log_backend_uart.o
+         0          0         33          8          0       2497   nrf_log_default_backends.o
+      1280         96         32         16       1252      25687   nrf_log_frontend.o
+       566        108        102         64          0       5564   nrf_log_str_formatter.o
+       342          0          0          0          0       7348   nrf_memobj.o
+         0          0          0          0          0      30672   nrf_nvic.o
+         0          0          0          0          0       1080   nrf_ringbuf.o
+       118          6         14          8          0      35276   nrfx_clock.o
+      1226         92         19          0         92      58327   nrfx_gpiote.o
+       102         16         12          8          0       4400   nrfx_prs.o
+      1292         40         17          0         44      30965   nrfx_uart.o
+      1134         44         18          0         36      24139   nrfx_uarte.o
+       796         70          0          4          0      29510   system_nrf52.o
+
+    ----------------------------------------------------------------------
+     14654       1268        972        300      11396     647838   Object Totals
+>>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
          0          0         32          0          0          0   (incl. Generated)
         44          8         21          4          7          0   (incl. Padding)
 
@@ -2594,9 +2811,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
+<<<<<<< HEAD
      14928       1284       1108        300      11396     539475   Grand Totals
      14928       1284       1108         88      11396     539475   ELF Image Totals (compressed)
      14928       1284       1108         88          0          0   ROM Totals
+=======
+     14928       1288       1108        300      11396     630666   Grand Totals
+     14928       1288       1108         88      11396     630666   ELF Image Totals (compressed)
+     14928       1288       1108         88          0          0   ROM Totals
+>>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
 
 ==============================================================================
 
