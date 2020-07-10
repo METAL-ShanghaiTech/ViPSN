@@ -6,11 +6,9 @@ DATE: 2019-10-02-015015
 #define key_UART 1
 #define key_LED 1
 #define key_LOG 0
-<<<<<<< HEAD
+
 #define BUTTON_TOUCH 13
-=======
-#define BUTTON_TOUCH 1
->>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
+
 #include <stdbool.h>
 #include <string.h>
 #include <stdint.h>
@@ -212,7 +210,7 @@ static void s_tx(void)//send data
 nrf_delay_us(200);
 clocks_ex();
 }
-<<<<<<< HEAD
+
                               
 static void led_toggle_timeout_handler(void * p_context)
 {
@@ -233,10 +231,6 @@ static void timers_init(void)
 //                                led_toggle_timeout_handler);
 	  APP_ERROR_CHECK(err_code);
 }
-=======
-
->>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
-
 
 
 /*
