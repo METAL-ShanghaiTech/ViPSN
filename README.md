@@ -46,7 +46,7 @@ The following pack are required after installing keil5:
 2. NordicSemiconductor::Device:Startup:8.9.0
 3. ARM.CMSIS.4.5.0
 
-When open [project](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx), the dialog box will pop and remind installing above packs. 
+When open [project](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs), the dialog box will pop and remind installing above packs. 
 
 After automatically installing, keil5 can complier the project. 
 
@@ -62,7 +62,7 @@ The brief explanation for the project is following:
 
 #### Bridge 
 
-Code can be opened [here](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx).
+Code can be opened [here](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs).
 
 **BUTTON_TOUCH** is the IO port set. 
 
@@ -86,7 +86,7 @@ In this Bridge case, the timer will repeat according to **LED_TOGGLE_INTERVAL**.
 
 #### Transient 
 
-Code can be opened [here](.\EUU\software\EUU_trans\examples\case of transient excitation\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx).
+Code can be opened [here](.\EUU\software\EUU_trans\examples\case of transient excitation\pca10040\blank\arm5_no_packs).
 
 **BUTTON_TOUCH** is the IO port set. 
 
@@ -139,17 +139,10 @@ If developers want to download hex file into MCU, connecting JLINK to EUU right-
 ### How to decide resistance value in PCB
 
 MIC841 comparator has two thresholds. According to its datasheet, low-voltage and high-voltage thresholds can be computed by:
-$$
-V_{IN(LO)} = V_{REF}\times(\frac{R_{c1}+R_{c2}+R_{c3}}{R_{c2}+R_{c3}})
-$$
 
-$$
-V_{IN(HI)} = V_{REF}\times(\frac{R_{c1}+R_{c2}+R_{c3}}{R_{c3}})
-$$
+![tem.png](https://i.loli.net/2020/08/04/bWqpYTrogd6CGHn.png)
 
-where $V_{REF}$ is 1.24$V$.
-
-Here, we set $R_{c1} = 10m$ ohm $R_{c2} = 470k $ ohm $ R_{c3} = 3.3m $ ohm.  And $V_{IN(HI)} = 5.17V$ and $V_{IN(LO)} = 4.53V$.  So the intermittent can be caused after the MCU works within 1 second and its $V_{IN(LO)}$ is lower than MCU power voltage. It works. More details are shown in  MIC841 [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005758A.pdf).
+So the intermittent can be caused after the MCU works within 1 second and its $V_{IN(LO)}$ is lower than MCU power voltage. It works. More details are shown in  MIC841 [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005758A.pdf).
 
 
 ### Solidworks model  
