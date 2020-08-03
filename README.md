@@ -13,26 +13,164 @@ Under the excitation, the piezoelectric transducer outputs an irregular fluctuat
 For **EMU**, beyond the commercial regulation chip, our design not only provides temporary capacitive energy storage for the extra harvested energy and supplies power at a constant voltage to EUU. It can also produces necessary energy-level indicating signals to the energy user for better operation under fluctuating or intermittent vibrations. A bluetooth low energy sensor node is used to carry out sensing and transmitting functions as **EUU**.
 
 ## Prerequisites
-#### Hardware design
-- Altium Designer (version 16.1) is used for the PCB design.
-- Solidworks is used for 3D-printer case.
-#### Software design
-- Keil is required to compile the software. 
+
+### Hardware design
+- Altium Designer (version 16.1 or above) is used for the PCB design.
+- Solidworks(version 2018 or above) is used for 3D-printer case.
+### Software design
+- Keil5 is required to compile the software. 
 
 ## Software Provided 
 
-In **VSU** folder, this project provides the [Audio](./VSU/Audio/Example) file, which is played by resonant speaker. [AudioGenerator](./VSU/Audio/AudioGenerator.m) can be edited to generate a stable audio wave. Also, the 3D model file is provided. 
+In **VSU** folder, this project provides the [Audio](./VSU/Audio/Example) file, which is played by resonant speaker. [AudioGenerator](./VSU/Audio/AudioGenerator.m) can be edited to generate a stable audio wave and . Also, the 3D model file is provided. More details are shown in [VSU README.md](./VSU/README.md).
 
 In **ICU** folder, here are four types circuit model, SEH, SP-P-SSHI, SP-SECE, SP-S-SSHI.
 
-In **EMU** folder, here is a pcb file.
+In **EMU** folder, here is a PCB file.
 
 In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included. 
+
+
+## For developers
+### How to install keil5
+
+ Go to [here](http://www2.keil.com/mdk5 ) to download keil5.
+
+It is necessary to activate keil5 before compiling code.
+
+Device is nordic nRF52832-QFAA.
+
+The following pack are required after installing keil5:
+
+1. NordicSemiconductor.nRF_DeviceFamilyPack.8.17.0.pack
+2. NordicSemiconductor::Device:Startup:8.9.0
+3. ARM.CMSIS.4.5.0
+
+When open [project](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx), the dialog box will pop and remind installing above packs. 
+
+After automatically installing, keil5 can complier the project. 
+
+JLINK is recommended to download hex file. If JLINK is not available for developers, STLINK is also available. 
+
+### Code & Project
+
+In EUU, there are two example projects. 
+
+Developers should build and download it. If something go wrong, please read **Problems may encountered**.
+
+The brief explanation for the project is following:
+
+#### Bridge 
+
+Code can be opened [here](.\EUU\software\EUU_trans\examples\case of bridge vibration\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx).
+
+**BUTTON_TOUCH** is the IO port set. 
+
+When **BUTTON_TOUCH** is rising edge, IO interrupt starts. 
+
+When it is falling edge, IO interrupt stops. 
+
+When IO interrupt starts, a timer starts at the same time. 
+
+The timer is set by **LED_TOGGLE_INTERVAL**. 
+
+After timer overflows, **led_toggle_timeout_handler** function is called. 
+
+In this case, it only has a function named **s_tx()**. Developers can change this function to its custom function. 
+
+This function starts high frequency clk at the beginning, then collecting temperature sensor data, sending by ESB, delaying 200ms, and then changing clk from high frequency to low frequency.
+
+In this Bridge case, the timer will repeat according to **LED_TOGGLE_INTERVAL**. And it repeats until IO port is falling edge.
+
+
+
+#### Transient 
+
+Code can be opened [here](.\EUU\software\EUU_trans\examples\case of transient excitation\pca10040\blank\arm5_no_packs\nrf_pwr_mgmt_pca10040.uvprojx).
+
+**BUTTON_TOUCH** is the IO port set. 
+
+When **BUTTON_TOUCH** is rising edge, IO interrupt starts. 
+
+When it is falling edge, IO interrupt stops. 
+
+When IO interrupt starts, a timer starts at the same time. 
+
+The timer is set by **LED_TOGGLE_INTERVAL**. 
+
+After timer overflows, **led_toggle_timeout_handler** function is called. Then the timer closes before IO detects it is falling edge. 
+
+In this case, it only has a function named **s_tx()**. Developers can change this function to its custom function. 
+
+This function starts high frequency clk at the beginning, then collecting temperature sensor data, sending by ESB, delaying 200ms, and then changing clk from high frequency to low frequency.
+
+
+In this Transient case, the timer will only be singly ticked. And it repeats until IO port is falling edge.
+
+
+
+
+### PCB model
+
+In this project, there are some PCB files. It is easier for developers to change these models for there special requirements. 
+
+For example, if people need to have another line or pin to do some tasks, they can use this as a template.
+
+The first PCB is EMU and the second PCB is EUU. ICU PCB files are shown in [ICU Readme](./ICU/README.md).![emu_pcb.png](https://i.loli.net/2020/07/28/glvrNj16mMwG8PA.png)
+
+![euu_pcb.png](https://i.loli.net/2020/07/30/ZUkPE4gstoIHeVX.png)
+
+### Hardware connection
+
+Piezoelectric transducer-> EMU PZ
+
+EUU Power+ -> EMU LTC3588 Vout
+
+EUU Power- -> EMU LTC3588 GND_h
+
+EMU MIC841 EXTI -> EUU BUTTON_TOUCH
+
+The gjump and vjump (in EMU) should be connected.
+
+If developers want to download hex file into MCU, connecting JLINK to EUU right-bottom.
+
+
+
+### How to decide resistance value in PCB
+
+MIC841 comparator has two thresholds. According to its datasheet, low-voltage and high-voltage thresholds can be computed by:
+$$
+V_{IN(LO)} = V_{REF}\times(\frac{R_{c1}+R_{c2}+R_{c3}}{R_{c2}+R_{c3}})
+$$
+
+$$
+V_{IN(HI)} = V_{REF}\times(\frac{R_{c1}+R_{c2}+R_{c3}}{R_{c3}})
+$$
+
+where $V_{REF}$ is 1.24$V$.
+
+Here, we set $R_{c1} = 10m$ ohm $R_{c2} = 470k $ ohm $ R_{c3} = 3.3m $ ohm.  And $V_{IN(HI)} = 5.17V$ and $V_{IN(LO)} = 4.53V$.  So the intermittent can be caused after the MCU works within 1 second and its $V_{IN(LO)}$ is lower than MCU power voltage. It works. More details are shown in  MIC841 [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005758A.pdf).
+
+
+### Solidworks model  
+These following 3D models are connected to speakers. 
+
+![vsu_2.png](https://i.loli.net/2020/07/30/zgLTpl98fEGJMBr.png)
+
+![vsu_1.png](https://i.loli.net/2020/07/30/EHKzJLeBUgjndk2.png)
+
+
+
+
+
+
+
 
 ## Problems may encountered 
 
 1. In Nordic MCU, user may notice that their power cost is dramatically larger than the paper mentioned. The possible reason is the MCU is broken so that it can not change into low power mode.
-2. If user can not open Solidworks file, the possible reason is that the version of Solidworks does not match.
+2. If user can not open Solidworks file, the possible reason is that the version of Solidworks does not match. It may be lower than the version.
+3.  If MIC841 doesn't output automatically, developers can change another group of resistances. Please make sure the value of threshold is correct. (From MIC841 [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005758A.pdf))
 
 
 ## Related publications

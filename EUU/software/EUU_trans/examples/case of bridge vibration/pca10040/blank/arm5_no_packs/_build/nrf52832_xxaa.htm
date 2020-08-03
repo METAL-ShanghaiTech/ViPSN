@@ -3,11 +3,7 @@
 <title>Static Call Graph - [.\_build\nrf52832_xxaa.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\_build\nrf52832_xxaa.axf</H1><HR>
-<<<<<<< HEAD
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Jul 05 11:16:06 2020
-=======
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Tue Jun 02 19:35:44 2020
->>>>>>> 1246ff24a81c31105d0000fb2080dbef75ad56ef
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Jul 31 19:38:10 2020
 <BR><P>
 <H3>Maximum Stack Usage =        344 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -538,9 +534,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_util_disable_irq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_log_frontend_dequeue
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_balloc_free
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_balloc_alloc
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buf_prealloc
@@ -550,9 +546,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_util_enable_irq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_log_frontend_dequeue
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_balloc_free
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_balloc_alloc
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buf_prealloc
@@ -698,9 +694,9 @@ Global Symbols
 <P><STRONG><a name="[aa]"></a>nrf_esb_disable</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, nrf_esb.o(i.nrf_esb_disable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nrf_esb_disable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_fifos
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_fifos
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_DisableIRQ
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_init
 </UL>
@@ -723,15 +719,15 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[88]"></a>nrf_esb_init</STRONG> (Thumb, 308 bytes, Stack size 16 bytes, nrf_esb.o(i.nrf_esb_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = nrf_esb_init &rArr; nrf_esb_disable
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = nrf_esb_init &rArr; update_radio_parameters
 </UL>
-<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_disable
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radio_parameters
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radio_parameters
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_fifos
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;esb_init
 </UL>
@@ -759,9 +755,9 @@ Global Symbols
 <P><STRONG><a name="[8b]"></a>nrf_esb_set_prefixes</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, nrf_esb.o(i.nrf_esb_set_prefixes))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = nrf_esb_set_prefixes &rArr; apply_address_workarounds
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radio_addresses
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_radio_addresses
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_address_workarounds
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;esb_init
 </UL>
@@ -791,10 +787,10 @@ Global Symbols
 <P><STRONG><a name="[b5]"></a>nrf_esb_write_payload</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, nrf_esb.o(i.nrf_esb_write_payload))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = nrf_esb_write_payload &rArr; start_tx_transaction
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_DisableIRQ
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s_tx
 </UL>
@@ -1024,8 +1020,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prs_box_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_uninit
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_uninit
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_uninit
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_uninit
 </UL>
 
 <P><STRONG><a name="[40]"></a>nrfx_uart_0_irq_handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nrfx_uart.o(i.nrfx_uart_0_irq_handler))
@@ -1038,9 +1034,9 @@ Global Symbols
 <P><STRONG><a name="[a9]"></a>nrfx_uart_init</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, nrfx_uart.o(i.nrfx_uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = nrfx_uart_init &rArr; apply_config &rArr; nrf_gpio_cfg_output &rArr; nrf_gpio_cfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_config
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_clear
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_init
 </UL>
@@ -1048,10 +1044,10 @@ Global Symbols
 <P><STRONG><a name="[d9]"></a>nrfx_uart_tx</STRONG> (Thumb, 160 bytes, Stack size 32 bytes, nrfx_uart.o(i.nrfx_uart_tx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = nrfx_uart_tx &rArr; tx_byte &rArr; nrf_uart_event_clear
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_check
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_tx_in_progress
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_tx_in_progress
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_byte
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_clear
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_tx
 </UL>
@@ -1063,8 +1059,8 @@ Global Symbols
 <P><STRONG><a name="[c4]"></a>nrfx_uart_uninit</STRONG> (Thumb, 170 bytes, Stack size 32 bytes, nrfx_uart.o(i.nrfx_uart_uninit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = nrfx_uart_uninit &rArr; nrf_gpio_cfg_default &rArr; nrf_gpio_cfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_default
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_release
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_release
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_default
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_log_backend_uart_panic_set
 </UL>
@@ -1079,9 +1075,9 @@ Global Symbols
 <P><STRONG><a name="[a8]"></a>nrfx_uarte_init</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, nrfx_uarte.o(i.nrfx_uarte_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = nrfx_uarte_init &rArr; apply_config &rArr; nrf_gpio_cfg_output &rArr; nrf_gpio_cfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupts_enable
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupts_enable
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_config
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_acquire
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_init
 </UL>
@@ -1104,8 +1100,8 @@ Global Symbols
 <P><STRONG><a name="[c3]"></a>nrfx_uarte_uninit</STRONG> (Thumb, 166 bytes, Stack size 32 bytes, nrfx_uarte.o(i.nrfx_uarte_uninit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = nrfx_uarte_uninit &rArr; nrf_gpio_cfg_default &rArr; nrf_gpio_cfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_default
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_release
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_prs_release
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_default
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_log_backend_uart_panic_set
 </UL>
@@ -1271,11 +1267,11 @@ Local Symbols
 <P><STRONG><a name="[d8]"></a>nrf_uart_event_clear</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, nrfx_uart.o(i.nrf_uart_event_clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = nrf_uart_event_clear
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_init
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_tx
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_tx
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_irq_handler
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_byte
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_byte
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_init
 </UL>
 
 <P><STRONG><a name="[e9]"></a>nrf_uart_int_enable_check</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nrfx_uart.o(i.nrf_uart_int_enable_check))
@@ -1314,13 +1310,13 @@ Local Symbols
 <P><STRONG><a name="[d7]"></a>uart_irq_handler</STRONG> (Thumb, 296 bytes, Stack size 48 bytes, nrfx_uart.o(i.uart_irq_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = uart_irq_handler &rArr; tx_done_event
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_check
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_byte
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_done_event
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_byte
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_int_enable_check
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_clear
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_0_irq_handler
 </UL>
@@ -1584,8 +1580,8 @@ Local Symbols
 <P><STRONG><a name="[43]"></a>nrf_log_backend_uart_panic_set</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, nrf_log_backend_uart.o(i.nrf_log_backend_uart_panic_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = nrf_log_backend_uart_panic_set &rArr; uart_init &rArr; app_error_handler_bare &rArr; app_error_fault_handler &rArr; nrf_log_frontend_std_0 &rArr; std_n &rArr; nrf_log_frontend_dequeue &rArr;  nrf_log_frontend_std_0 (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_uninit
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_uninit
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_uninit
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_uninit
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> nrf_log_backend_uart.o(.constdata)
@@ -1601,8 +1597,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = serial_tx &rArr; app_error_handler_bare &rArr; app_error_fault_handler &rArr; nrf_log_frontend_std_0 &rArr; std_n &rArr; nrf_log_frontend_dequeue &rArr;  nrf_log_frontend_std_0 (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler_bare
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_tx
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uart_tx
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrfx_uarte_tx
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> nrf_log_backend_uart.o(i.nrf_log_backend_uart_put)
 </UL>
@@ -1708,9 +1704,9 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_write_payload
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_init
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_flush_tx
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_skip_tx
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QDEC_IRQHandler
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
 </UL>
 
 <P><STRONG><a name="[e2]"></a>NVIC_SetPendingIRQ</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, nrf_esb.o(i.NVIC_SetPendingIRQ))
@@ -1749,19 +1745,19 @@ Local Symbols
 <P><STRONG><a name="[3c]"></a>on_radio_disabled_tx_noack</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, nrf_esb.o(i.on_radio_disabled_tx_noack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = on_radio_disabled_tx_noack &rArr; start_tx_transaction
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_skip_tx
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_skip_tx
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> nrf_esb.o(i.start_tx_transaction)
 </UL>
 <P><STRONG><a name="[3a]"></a>on_radio_disabled_tx_wait_for_ack</STRONG> (Thumb, 268 bytes, Stack size 32 bytes, nrf_esb.o(i.on_radio_disabled_tx_wait_for_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = on_radio_disabled_tx_wait_for_ack &rArr; start_tx_transaction
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_skip_tx
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_tx_transaction
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_fifo_push_rfbuf
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_skip_tx
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> nrf_esb.o(i.on_radio_disabled_tx)
 </UL>
@@ -1781,9 +1777,9 @@ Local Symbols
 <P><STRONG><a name="[b4]"></a>start_tx_transaction</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, nrf_esb.o(i.start_tx_transaction))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = start_tx_transaction
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_ClearPendingIRQ
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_write_payload
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_esb_start_tx
