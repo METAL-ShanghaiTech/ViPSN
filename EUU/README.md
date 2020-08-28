@@ -1,4 +1,4 @@
-# EUU
+# Energy User Unit (EUU)
 
 A programmable BLE SoC (system on chip) nRF52832 by Nordic Inc. serves as the EUU. The EUU has three parts: transceiver, sensor, and CPU. The sensor part uses the on-chip temperature sensor in nRF52832. 
 Two remote edge devices are designed for receiving the signals sent out by ViPSN. 
