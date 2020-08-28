@@ -1,5 +1,5 @@
 # ViPSN
-<img src="https://i.loli.net/2020/08/28/hBXYPsrLNdIv9R3.png" alt="ViPSN"  align="right" width="35%">
+<img src="https://i.loli.net/2020/08/28/hBXYPsrLNdIv9R3.png" alt="ViPSN"  align="right" width="45%">
 
 **ViPSN** (acronym of vibration-powered sensing node) is a programmable Internet of Things (IoT) platform for the development of vibration- or motion-powered sensing and transmitting systems. It serves as a reconfigurable developing platform for vibration-powered IoT applications. The whole set of **ViPSN** assembles six basic modules: a vibration emulator as the energy generation unit (**EGU**); a piezoelectric transducer as the energy transduction unit (**ETU**); a power-boosting interface circuit as the energy enhancement unit (**EEU**); a dc-dc regulator with energy-level indicating signals as the energy management unit (**EMU**); a Bluetooth low energy (BLE) module as the energy user unit (**EUU**); and a mobile app as the edge demonstration unit (**EDU**). All units or modules are connected with easy mechanical joggle joints and electrical plunger pin contacts.
 
