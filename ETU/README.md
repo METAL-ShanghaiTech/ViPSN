@@ -1,4 +1,4 @@
-## ETU
+## Energy Transduction Unit (ETU)
 For ETU, the piezoelectric transducer is made of a circular low-cost piezoelectric buzzer, whose rim is fixed at the moving part of the resonance speaker. 
 The low-cost generator is good for popularization. 
 If this cheap and under-performing structure works well, there is no doubt for other more sophisticated designs. 
