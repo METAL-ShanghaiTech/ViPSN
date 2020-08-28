@@ -8,7 +8,7 @@
 <!-- ## Project structure -->
 
 ## Setup and usage
-Coming soon! Right now we are working on a way to get hardware to people, please contact the authors for more information. 
+Coming soon! This is first version (2020-08-28) of ViPSN. Right now we are working on a way to get hardware to people, please contact the authors for more information. 
 For now, feel free to explore the hardware and software designs.
 
 ## Prerequisites
