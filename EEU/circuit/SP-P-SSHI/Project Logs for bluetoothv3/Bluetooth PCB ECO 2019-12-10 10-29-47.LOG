@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=PIE2_2 Pin=P1-2
+Removed Pin From Net: NetName=PIE1_1 Pin=P1-3
+Removed Pin From Net: NetName=PIE1_1 Pin=P1-4
+Change Component DesignItemId : Designator=P1 Old DesignItemId=Header 4 New DesignItemId=Header 2
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X4 New Footprint=HDR1X2
+Change Component Comment : Designator=P1 Old Comment=Header 4 New Comment=Header 2
+Added Component: Designator=P2(HDR1X2)
+Added Pin To Net: NetName=PIE1_1 Pin=P1-2
+Added Pin To Net: NetName=PIE1_1 Pin=P2-1
+Added Pin To Net: NetName=PIE2_2 Pin=P2-2
+Added Member To Class: ClassName=Bluetooth Member=Component P2 Header 2

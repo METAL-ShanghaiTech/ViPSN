@@ -1,0 +1,40 @@
+Added Component: Designator=P1(HDR1X13)
+Added Component: Designator=P2(HDR1X13)
+Added Pin To Net: NetName=P4 Pin=P1-10
+Added Pin To Net: NetName=P3 Pin=P1-11
+Added Pin To Net: NetName=P2 Pin=P1-12
+Added Pin To Net: NetName=P1 Pin=P1-13
+Added Pin To Net: NetName=P1 Pin=P2-1
+Added Pin To Net: NetName=P2 Pin=P2-2
+Added Pin To Net: NetName=P3 Pin=P2-3
+Added Pin To Net: NetName=P4 Pin=P2-4
+Added Pin To Net: NetName=P5 Pin=P1-9
+Added Pin To Net: NetName=P5 Pin=P2-5
+Added Net: Name=P5
+Added Pin To Net: NetName=P6 Pin=P1-8
+Added Pin To Net: NetName=P6 Pin=P2-6
+Added Net: Name=P6
+Added Pin To Net: NetName=P7 Pin=P1-7
+Added Pin To Net: NetName=P7 Pin=P2-7
+Added Net: Name=P7
+Added Pin To Net: NetName=P8 Pin=P1-6
+Added Pin To Net: NetName=P8 Pin=P2-8
+Added Net: Name=P8
+Added Pin To Net: NetName=P9 Pin=P1-5
+Added Pin To Net: NetName=P9 Pin=P2-9
+Added Net: Name=P9
+Added Pin To Net: NetName=P10 Pin=P1-4
+Added Pin To Net: NetName=P10 Pin=P2-10
+Added Net: Name=P10
+Added Pin To Net: NetName=P11 Pin=P1-3
+Added Pin To Net: NetName=P11 Pin=P2-11
+Added Net: Name=P11
+Added Pin To Net: NetName=P12 Pin=P1-2
+Added Pin To Net: NetName=P12 Pin=P2-12
+Added Net: Name=P12
+Added Pin To Net: NetName=P13 Pin=P1-1
+Added Pin To Net: NetName=P13 Pin=P2-13
+Added Net: Name=P13
+Added Member To Class: ClassName=Bluetooth Member=Component P1 Header 13
+Added Member To Class: ClassName=Bluetooth Member=Component P2 Header 13
+Added Room: Name=Bluetooth

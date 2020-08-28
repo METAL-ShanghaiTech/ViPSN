@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=PIE1_1 Pin=J2-1
+Removed Pin From Net: NetName=PIE2_2 Pin=J4-1
+Change Component Designator: OldDesignator=J1_1 NewDesignator=J1
+Change Component Designator: OldDesignator=J2_1 NewDesignator=J2
+Change Component Designator: OldDesignator=J3_1 NewDesignator=J3
+Change Component Designator: OldDesignator=J4_1 NewDesignator=J4
+Change Component Designator: OldDesignator=J7_1 NewDesignator=J7
+Change Component Designator: OldDesignator=J11_1 NewDesignator=J11
+Added Pin To Net: NetName=PIE1_1 Pin=J2-1
+Added Pin To Net: NetName=PIE2_2 Pin=J4-1

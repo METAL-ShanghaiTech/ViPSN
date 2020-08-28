@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=PIE2_2 Pin=P1-1
+Removed Pin From Net: NetName=PIE1_1 Pin=P1-2
+Removed Pin From Net: NetName=PIE1_1 Pin=P2-1
+Removed Pin From Net: NetName=PIE2_2 Pin=P2-2
+Removed Member From Class: ClassName=Bluetooth Member=P1
+Removed Member From Class: ClassName=Bluetooth Member=P1
+Removed Member From Class: ClassName=Bluetooth Member=P2
+Removed Member From Class: ClassName=Bluetooth Member=P2
+Removed Member From Class: ClassName=Bluetooth Member=P2
+Added Component: Designator=J1(PIN1)
+Added Component: Designator=J2(PIN1)
+Added Component: Designator=J3(PIN1)
+Added Component: Designator=J4(PIN1)
+Added Pin To Net: NetName=PIE1_1 Pin=J1-1
+Added Pin To Net: NetName=PIE1_1 Pin=J2-1
+Added Pin To Net: NetName=PIE2_2 Pin=J3-1
+Added Pin To Net: NetName=PIE2_2 Pin=J4-1
+Added Member To Class: ClassName=Bluetooth Member=Component J1 Socket
+Added Member To Class: ClassName=Bluetooth Member=Component J2 Socket
+Added Member To Class: ClassName=Bluetooth Member=Component J3 Socket
+Added Member To Class: ClassName=Bluetooth Member=Component J4 Socket
