@@ -1,4 +1,4 @@
-## EGU
+## Energy Generation Unit (EGU)
 For EGU, a commercial portable resonance speaker serves as the vibrator.
 It generates vibrations according to the records from real-world environments. 
 It is self-contained with a battery pack inside and standard auxiliary port (AUX) for audio input. 
