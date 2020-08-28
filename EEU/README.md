@@ -1,4 +1,4 @@
-# EEU
+# Energy Enhancement Unit (EEU)
 
 The **EEU** offers the following options:
 
