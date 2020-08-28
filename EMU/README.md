@@ -1,4 +1,4 @@
-# EMU
+# Energy Management Unit (EMU)
 
 <!-- **EMU** plays an essential role to guarantee the robust and reliable operation under complicated vibration conditions.
 It is responsible not only for providing temporary capacitive energy storage for the extra harvested energy from **ETU**, but also for supplying power at a constant voltage to **EUU**.
