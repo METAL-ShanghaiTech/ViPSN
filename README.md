@@ -8,9 +8,17 @@
 <!-- ## Project structure -->
 
 ## Setup and usage
+```
 Coming soon! This is first version (2020-08-28) of ViPSN. Right now we are working on a way to get hardware to people, please contact the authors for more information. 
-For now, feel free to explore the hardware and software designs.
+For now, feel free to explore the hardware and software designs, but please cite our work.
 
+@Article{Li2020,
+  author  = {Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang},
+  journal = {IEEE Internet of Things Journal},
+  title   = {{ViPSN}: A Vibration-Powered IoT Platform},
+  year    = {2020},
+}
+```
 ## Prerequisites
 ### Hardware design
 - Altium Designer (version 16.1 or above) is used for the PCB design.
@@ -163,7 +171,7 @@ In **EMU** folder, here is a PCB file.
 In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included.  -->
 
 ## Related publications
-- Xin Li, Li Teng, Hong Tang, and Junrui Liang*, "ViPSN: A Vibration-Powered IoT Platform", IEEE Internet of Things Journal, 2020. <a name="divtop"></a>
+- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, early access. <a name="divtop"></a>
 - Xin Li, Hong Tang, Yiyao Zhu and Junrui Liang*, “Power solution of a vibration-powered sensing node,” Proceedings of the 9th International Power Electronics and Motion Control Conference, Nanjing, China, May 31-June 3, 2020. (IPEMC - ECCE Asia 2020). <a name="divtop2"></a>
 - Xin Li, Hong Tang, and Junrui Liang*, “System design and implementation of a transient-motion-powered IoT sensor node”, Proceedings of the ASME 2020 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, Irvine, CA, USA, September 14–16, 2020. (SMASIS 2020).
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang, "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
@@ -179,8 +187,17 @@ In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\E
 This research was supported by the grants from the National Natural Science Foundation of China (Project No. 61401277) and ShanghaiTech University (Project No. F-0203-13-003).
 
 ## License
+```
+MIT License
+Copyright 2020 Xin Li, Hong Tang, and Junrui Liang*, ShanghaiTech University.
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or  substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 ## Contact
 If you have technical problems, please contact: lixin1@shanghaitech.edu.cn or tanghong@shanghaitech.edu.cn.
 
