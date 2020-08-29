@@ -9,8 +9,9 @@
 
 ## Setup and usage
 ```
-Coming soon! This is first version (2020-08-28) of ViPSN. Right now we are working on a way to get hardware to people, please contact the authors for more information. 
-For now, feel free to explore the hardware and software designs, but please cite our work.
+Coming soon! This is first version (2020-08-28) of ViPSN. 
+Right now we are working on a way to get hardware to people, please contact the authors for more information. 
+For now, feel free to explore the hardware and software designs, but be sure to cite our work.
 
 @Article{Li2020,
   author  = {Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang},
