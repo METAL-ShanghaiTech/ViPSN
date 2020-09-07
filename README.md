@@ -22,8 +22,8 @@ For now, feel free to explore the hardware and software designs, but be sure to 
 ```
 ## Prerequisites
 ### Hardware design
-- Altium Designer (version 9 or above) is used for the PCB design.
-- Solidworks(version 2018 or above) is used for 3D-printer case.
+- Altium Designer (version 9.4 or above) is used for the PCB design.
+- Solidworks (version 2018 or above) is used for 3D-printer case.
 ### Software design
 - Keil5 is required to compile the software. 
 
