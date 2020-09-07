@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=PIE2_2 Pin=J3-1
-Added Component: Designator=J11(PIN1)
-Added Pin To Net: NetName=PIE2_2 Pin=J3-1
-Added Member To Class: ClassName=Bluetooth Member=Component J7 Socket
-Added Member To Class: ClassName=Bluetooth Member=Component J11 Socket
