@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\boards.o"
+".\objects\nrfx_uarte.o"
+".\objects\nrfx_uart.o"
+".\objects\nrfx_prs.o"
+".\objects\nrf_drv_uart.o"
+".\objects\app_error.o"
+".\objects\app_error_handler_keil.o"
+".\objects\app_error_weak.o"
+".\objects\app_util_platform.o"
+".\objects\nrf_assert.o"
+".\objects\nrf_strerror.o"
+".\objects\app_uart_fifo.o"
+".\objects\retarget.o"
+".\objects\app_fifo.o"
+".\objects\nrf_esb.o"
+".\objects\arm_startup_nrf52.o"
+".\objects\system_nrf52.o"
+--library_type=microlib --strict --scatter ".\Objects\nrf52832_qfaa.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\nrf52832_qfaa.map" -o .\Objects\nrf52832_qfaa.axf
