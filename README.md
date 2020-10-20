@@ -172,7 +172,7 @@ In **EMU** folder, here is a PCB file.
 In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included.  -->
 
 ## Related publications
-- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, early access. <a name="divtop"></a>
+- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang, "ViPSN: a vibration-powered IoT platform," IEEE Internet of Things Journal, doi: 10.1109/JIOT.2020.3016993. <a name="divtop"></a>
 - Xin Li, Hong Tang, Yiyao Zhu and Junrui Liang*, “Power solution of a vibration-powered sensing node,” Proceedings of the 9th International Power Electronics and Motion Control Conference, Nanjing, China, May 31-June 3, 2020. (IPEMC - ECCE Asia 2020). <a name="divtop2"></a>
 - Xin Li, Hong Tang, and Junrui Liang*, “System design and implementation of a transient-motion-powered IoT sensor node”, Proceedings of the ASME 2020 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, Irvine, CA, USA, September 14–16, 2020. (SMASIS 2020).
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang, "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
