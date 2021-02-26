@@ -182,7 +182,7 @@ In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\E
 
 ## Contributors
 - Yuheng Zhao and Kang Zhao contributed early on to the hardware designs in 2017.
-- Xin Li proposed and designed the system of ViPSN in 2019. Hong Tang implemented the hardwares of system. Li Teng and Jingying Chen helped with some works of EMU.
+- Xin Li proposed and designed the system of ViPSN in 2019. Hong Tang implemented the hardwares of system.
 - Prof. Junrui Liang oversaw, funded, and originated the project.
 
 ## Funding
