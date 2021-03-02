@@ -13,13 +13,15 @@ Coming soon! This is first version (2020-08-28) of ViPSN.
 Right now we are working on a way to get hardware to people, please contact the authors for more information. 
 For now, feel free to explore the hardware and software designs, but be sure to cite our work.
 ```
-@article{li2020vipsn,
-  title={ViPSN: A vibration-powered iot platform},
-  author={Li, Xin and Teng, Li and Tang, Hong and Chen, Jingying and Wang, Haoyu and Liu, Yu and Fu, Minfan and Liang, Junrui},
-  journal={IEEE Internet of Things Journal},
-  year={2020},
-  publisher={IEEE}
-}
+@ARTICLE{9169698,
+  author={X. {Li} and L. {Teng} and H. {Tang} and J. {Chen} and H. {Wang} and Y. {Liu} and M. {Fu} and J. {Liang}},
+  journal={IEEE Internet of Things Journal}, 
+  title={ViPSN: A Vibration-Powered IoT Platform}, 
+  year={2021},
+  volume={8},
+  number={3},
+  pages={1728-1739},
+  doi={10.1109/JIOT.2020.3016993}}
 ```
 ## Prerequisites
 ### Hardware design
@@ -173,7 +175,8 @@ In **EMU** folder, here is a PCB file.
 In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included.  -->
 
 ## Related publications
-- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang, "ViPSN: a vibration-powered IoT platform," IEEE Internet of Things Journal, doi: 10.1109/JIOT.2020.3016993. <a name="divtop"></a>
+- Jinxi Zhang, Shaobo Gong, Xin Li, Junrui Liang, Zhong Lin Wang*, and Kailiang Ren*, "A wind‐driven poly (tetrafluoroethylene) electret and polylactide polymer‐based hybrid nanogenerator for self‐powered temperature detection system," Advanced Sustainable Systems, art. no. 2000192. 2021.
+- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, vol. 8, no. 3, pp. 1728-1739, 2021. <a name="divtop"></a>
 - Xin Li, Hong Tang, Yiyao Zhu and Junrui Liang*, “Power solution of a vibration-powered sensing node,” Proceedings of the 9th International Power Electronics and Motion Control Conference, Nanjing, China, May 31-June 3, 2020. (IPEMC - ECCE Asia 2020). <a name="divtop2"></a>
 - Xin Li, Hong Tang, Bao Zhao, and Junrui Liang*, “System design and implementation of a transient-motion-powered IoT sensor node,” Proceedings of the ASME 2020 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, Irvine, CA, USA, September 14–16, 2020. (SMASIS 2020) (Finalist of Best Student Hardware Competision).
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang, "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
@@ -182,7 +185,8 @@ In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\E
 
 ## Contributors
 - Yuheng Zhao and Kang Zhao contributed early on to the hardware designs in 2017.
-- Xin Li proposed and designed the system of ViPSN in 2019. Hong Tang implemented the hardwares of system.
+- Xin Li proposed and designed the system of ViPSN in 2019. 
+- Hong Tang implemented the hardwares of system.
 - Prof. Junrui Liang oversaw, funded, and originated the project.
 
 ## Funding
