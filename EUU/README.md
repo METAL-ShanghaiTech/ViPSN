@@ -9,27 +9,34 @@ More detailed explanation can be referred to paper ([ViPSN: A Vibration-Powered 
 
 ## Software
 
-The EUU software includes the following parts:
+The EUU software includes the two version:
 
-- Case-1: [intermittent vibrations](./software/EUU_templates/examples/case_of_intermittent_vibrations/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
-- Case-2: [transient excitation](./software/EUU_templates/examples/case_of_transient_excitation/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
-- [Receiver](./software/Receiver/mdk5/esb_rx.uvprojx).
+- ESB
 
-The main differences between case of intermittent vibrations and transient excitation are as follows:
+    - [Example 1](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_intermittent_vibrations/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
+    - [Example 2](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_transient_excitation/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
+    - [Receiver](./software/ESB_version/Receiver_for_EUU/project/mdk5/esb_rx.uvprojx).
 
-```c
-//it has two types of timer, one is being ticked repeating with the interval set before     
-err_code = app_timer_create(&m_led_toggle_timer_id,
-                                APP_TIMER_MODE_REPEATED,
+    The main differences between above two examples are as follows:
+
+    ```c
+    //it has two types of timer, one is being ticked repeating with the interval set before     
+    err_code = app_timer_create(&m_led_toggle_timer_id,
+                                    APP_TIMER_MODE_REPEATED,
+                                    led_toggle_timeout_handler);
+    ```
+
+    ```c
+    //the other is being ticked singlely	
+    err_code = app_timer_create(&m_led_toggle_timer_id,
+                                APP_TIMER_MODE_SINGLE_SHOT,
                                 led_toggle_timeout_handler);
-```
+    ```
 
-```c
-//the other is being ticked singlely	
-err_code = app_timer_create(&m_led_toggle_timer_id,
-                               APP_TIMER_MODE_SINGLE_SHOT,
-                               led_toggle_timeout_handler);
-```
+- BLE beacon
+    - [Example 3](./software/beacon_version/examples/ble_peripheral/ble_app_beacon/pca10040/s132/arm5_no_packs/ble_app_beacon_pca10040_s132.uvprojx);
+
+
 
 <!-- ## How to install keil5
 
