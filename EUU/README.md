@@ -13,9 +13,9 @@ The EUU software includes the two version:
 
 - ESB
 
-    - [Example 1](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_intermittent_vibrations/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
-    - [Example 2](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_transient_excitation/pca10040/blank/arm5_no_packs/nrf_pwr_mgmt_pca10040.uvprojx);
-    - [Receiver](./software/ESB_version/Receiver_for_EUU/project/mdk5/esb_rx.uvprojx).
+    - [Example 1](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_intermittent_vibrations/pca10040/blank/arm5_no_packs/)
+    - [Example 2](./software/ESB_version/Transmitter_for_EUU/examples/ESB_template/case_of_transient_excitation/pca10040/blank/arm5_no_packs/)
+    - [Receiver](./software/ESB_version/Receiver_for_EUU/project/)
 
     The main differences between above two examples are as follows:
 
@@ -34,7 +34,7 @@ The EUU software includes the two version:
     ```
 
 - BLE beacon
-    - [Example 3](./software/beacon_version/examples/ble_peripheral/ble_app_beacon/pca10040/s132/arm5_no_packs/ble_app_beacon_pca10040_s132.uvprojx);
+    - [Example 3](./software/beacon_version/examples/ble_peripheral/ble_app_beacon/pca10040/s132/arm5_no_packs/)
 
 
 
