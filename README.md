@@ -9,7 +9,7 @@
 ## Setup and usage
 
 Coming soon! This is debug version (2021-03-05) of ViPSN. 
-Right now we are working on a way to get hardware to people, please contact the authors for more information (email: lixin1@shanghaitech.edu.cn or liangjr@shanghaitech.edu.cn). 
+Right now we are working on a way to get hardware to users, please contact the authors for more information (email: lixin1@shanghaitech.edu.cn or liangjr@shanghaitech.edu.cn). 
 For now, feel **free** to explore the hardware and software designs, but be sure to **cite** our work.
 ```
 @ARTICLE{9169698,
