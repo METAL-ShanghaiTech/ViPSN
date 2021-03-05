@@ -430,42 +430,42 @@ ARM Macro Assembler    Page 7
   371 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\_build\arm_startup_nrf52.d -o.\_build\arm_startup_nrf52.o 
--I..\..\..\config -I..\..\..\..\..\..\components -I..\..\..\..\..\..\components
-\boards -I..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd -I..\..\..\..\.
-.\..\components\libraries\atomic -I..\..\..\..\..\..\components\libraries\ballo
-c -I..\..\..\..\..\..\components\libraries\bsp -I..\..\..\..\..\..\components\l
-ibraries\button -I..\..\..\..\..\..\components\libraries\delay -I..\..\..\..\..
-\..\components\libraries\experimental_section_vars -I..\..\..\..\..\..\componen
-ts\libraries\log -I..\..\..\..\..\..\components\libraries\log\src -I..\..\..\..
-\..\..\components\libraries\memobj -I..\..\..\..\..\..\components\libraries\mut
-ex -I..\..\..\..\..\..\components\libraries\pwr_mgmt -I..\..\..\..\..\..\compon
-ents\libraries\ringbuf -I..\..\..\..\..\..\components\libraries\scheduler -I..\
-..\..\..\..\..\components\libraries\strerror -I..\..\..\..\..\..\components\lib
-raries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\.. -I..\..\.
-.\..\..\..\external\fprintf -I..\..\..\..\..\..\external\segger_rtt -I..\..\..\
-..\..\..\integration\nrfx -I..\..\..\..\..\..\integration\nrfx\legacy -I..\..\.
-.\..\..\..\modules\nrfx -I..\..\..\..\..\..\modules\nrfx\drivers\include -I..\.
-.\..\..\..\..\modules\nrfx\hal -I..\..\..\..\..\..\modules\nrfx\mdk -I..\config
- -I.\RTE\_nrf52832_xxaa -IC:\Users\IronRao\AppData\Local\Arm\Packs\ARM\CMSIS\4.
-5.0\CMSIS\Include -IC:\Users\IronRao\AppData\Local\Arm\Packs\NordicSemiconducto
-r\nRF_DeviceFamilyPack\8.17.0\Device\Include --predefine="__MICROLIB SETA 1" --
-predefine="__UVISION_VERSION SETA 529" --predefine="_RTE_ SETA 1" --predefine="
-NRF52 SETA 1" --predefine="BOARD_PCA10040 SETA 1" --predefine="CONFIG_GPIO_AS_P
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\_build\arm_startup_nrf52.d -o.\_build\arm_startup_nrf52.o -I.
+.\..\..\config -I..\..\..\..\..\..\components -I..\..\..\..\..\..\components\bo
+ards -I..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd -I..\..\..\..\..\.
+.\components\libraries\atomic -I..\..\..\..\..\..\components\libraries\balloc -
+I..\..\..\..\..\..\components\libraries\bsp -I..\..\..\..\..\..\components\libr
+aries\button -I..\..\..\..\..\..\components\libraries\delay -I..\..\..\..\..\..
+\components\libraries\experimental_section_vars -I..\..\..\..\..\..\components\
+libraries\log -I..\..\..\..\..\..\components\libraries\log\src -I..\..\..\..\..
+\..\components\libraries\memobj -I..\..\..\..\..\..\components\libraries\mutex 
+-I..\..\..\..\..\..\components\libraries\pwr_mgmt -I..\..\..\..\..\..\component
+s\libraries\ringbuf -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\
+..\..\..\..\components\libraries\strerror -I..\..\..\..\..\..\components\librar
+ies\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\.. -I..\..\..\.
+.\..\..\external\fprintf -I..\..\..\..\..\..\external\segger_rtt -I..\..\..\..\
+..\..\integration\nrfx -I..\..\..\..\..\..\integration\nrfx\legacy -I..\..\..\.
+.\..\..\modules\nrfx -I..\..\..\..\..\..\modules\nrfx\drivers\include -I..\..\.
+.\..\..\..\modules\nrfx\hal -I..\..\..\..\..\..\modules\nrfx\mdk -I..\config -I
+.\RTE\_nrf52832_xxaa -IC:\Users\Xin\AppData\Local\Arm\Packs\ARM\CMSIS\4.5.0\CMS
+IS\Include -IC:\Users\Xin\AppData\Local\Arm\Packs\NordicSemiconductor\nRF_Devic
+eFamilyPack\8.17.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="
+__UVISION_VERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="NRF52 SETA 
+1" --predefine="BOARD_PCA10040 SETA 1" --predefine="CONFIG_GPIO_AS_PINRESET SET
 
 
 
 ARM Macro Assembler    Page 8 
 
 
-INRESET SETA 1" --predefine="FLOAT_ABI_HARD SETA 1" --predefine="NRF52 SETA 1" 
---predefine="NRF52832_XXAA SETA 1" --predefine="NRF52_PAN_74 SETA 1" --predefin
-e="SWI_DISABLE0 SETA 1" --predefine="__HEAP_SIZE SETA 8192" --predefine="__STAC
-K_SIZE SETA 8192" --cpreproc_opts=-DBOARD_PCA10040,-DCONFIG_GPIO_AS_PINRESET,-D
-FLOAT_ABI_HARD,-DNRF52,-DNRF52832_XXAA,-DNRF52_PAN_74,-DSWI_DISABLE0,-D__HEAP_S
-IZE=8192,-D__STACK_SIZE=8192 --list=.\_build\arm_startup_nrf52.lst RTE\Device\n
-RF52832_xxAA\arm_startup_nrf52.s
+A 1" --predefine="FLOAT_ABI_HARD SETA 1" --predefine="NRF52 SETA 1" --predefine
+="NRF52832_XXAA SETA 1" --predefine="NRF52_PAN_74 SETA 1" --predefine="SWI_DISA
+BLE0 SETA 1" --predefine="__HEAP_SIZE SETA 8192" --predefine="__STACK_SIZE SETA
+ 8192" --cpreproc_opts=-DBOARD_PCA10040,-DCONFIG_GPIO_AS_PINRESET,-DFLOAT_ABI_H
+ARD,-DNRF52,-DNRF52832_XXAA,-DNRF52_PAN_74,-DSWI_DISABLE0,-D__HEAP_SIZE=8192,-D
+__STACK_SIZE=8192 --list=.\_build\arm_startup_nrf52.lst RTE\Device\nRF52832_xxA
+A\arm_startup_nrf52.s
 
 
 

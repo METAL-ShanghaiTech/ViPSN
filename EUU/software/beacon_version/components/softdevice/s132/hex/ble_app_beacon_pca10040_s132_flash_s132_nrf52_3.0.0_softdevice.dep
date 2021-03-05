@@ -1,0 +1,32 @@
+Dependencies for Project 'ble_app_beacon_pca10040_s132', Target 'flash_s132_nrf52_3.0.0_softdevice': (DO NOT MODIFY !)
+F (..\..\..\main.c)(0x5F61C244)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\..\config\ble_app_beacon_pca10040_s132 -I ..\..\..\config -I ..\config-I.\RTE\_flash_s132_nrf52_3.0.0_softdevice-IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.24.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -D_RTE_ -DNRF52-o ..\..\..\..\..\..\components\softdevice\s132\hex\main.o --omf_browse ..\..\..\..\..\..\components\softdevice\s132\hex\main.crf --depend ..\..\..\..\..\..\components\softdevice\s132\hex\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+F (..\config\sdk_config.h)(0x5F241107)()
+F (..\..\..\..\..\..\components\boards\boards.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\libraries\bsp\bsp.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\bsp\bsp_nfc.c)(0x583C929E)()
+F (..\..\..\license.txt)(0x583C92DD)()
+F (..\..\..\..\..\..\components\ble\common\ble_advdata.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\ble\common\ble_conn_params.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\ble\common\ble_srv_common.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\drivers_nrf\clock\nrf_drv_clock.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.c)(0x583C929D)()
+F (..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.c)(0x5F10019B)()
+F (..\..\..\..\..\..\components\drivers_nrf\uart\nrf_drv_uart.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\button\app_button.c)(0x5F0FF980)()
+F (..\..\..\..\..\..\components\libraries\util\app_error.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\util\app_error_weak.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\timer\app_timer.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\util\app_util_platform.c)(0x583C929F)()
+F (..\..\..\..\..\..\components\libraries\hardfault\hardfault_implementation.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\util\nrf_assert.c)(0x583C929F)()
+F (..\..\..\..\..\..\components\libraries\util\sdk_errors.c)(0x583C929F)()
+F (..\..\..\..\..\..\components\libraries\log\src\nrf_log_backend_serial.c)(0x583C929E)()
+F (..\..\..\..\..\..\components\libraries\log\src\nrf_log_frontend.c)(0x583C929E)()
+F (..\..\..\..\..\..\external\segger_rtt\RTT_Syscalls_KEIL.c)(0x583C92A2)()
+F (..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT.c)(0x583C92A2)()
+F (..\..\..\..\..\..\external\segger_rtt\SEGGER_RTT_printf.c)(0x583C92A2)()
+F (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.c)(0x583C929F)()
+F (RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s)(0x582F119A)()
+F (RTE\Device\nRF52832_xxAA\system_nrf52.c)(0x582F119A)()
