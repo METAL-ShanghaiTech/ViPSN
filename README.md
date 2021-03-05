@@ -40,7 +40,7 @@ In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\E
 
 ## Related publications
 - Jinxi Zhang, Shaobo Gong, Xin Li, Junrui Liang, Zhong Lin Wang*, and Kailiang Ren*, "A wind‐driven poly (tetrafluoroethylene) electret and polylactide polymer‐based hybrid nanogenerator for self‐powered temperature detection system," Advanced Sustainable Systems, art. no. 2000192. 2021.
-- Xin Li, Li Teng, Hong Tang, Jingying Chen, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, vol. 8, no. 3, pp. 1728-1739, 2021. <a name="divtop"></a>
+- Xin Li, Li Teng, Hong Tang, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, vol. 8, no. 3, pp. 1728-1739, 2021. <a name="divtop"></a>
 - Xin Li, Hong Tang, Yiyao Zhu and Junrui Liang*, “Power solution of a vibration-powered sensing node,” Proceedings of the 9th International Power Electronics and Motion Control Conference, Nanjing, China, May 31-June 3, 2020. (IPEMC - ECCE Asia 2020). <a name="divtop2"></a>
 - Xin Li, Hong Tang, Bao Zhao, and Junrui Liang*, “System design and implementation of a transient-motion-powered IoT sensor node,” Proceedings of the ASME 2020 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, Irvine, CA, USA, September 14–16, 2020. (SMASIS 2020) (Finalist of Best Student Hardware Competision).
 - Xin Li, Hong Tang, Junrui Liang*, and Lihua Tang, "Exploring the magnetic plucking motion towards a transient-motion-powered IoT sensor node", Proceedings of SPIE Conference 11376, Active and Passive Smart Structures and Integrated Systems IX, 113761U, 22 April 2020. (SPIE SS/NDE 2020).
