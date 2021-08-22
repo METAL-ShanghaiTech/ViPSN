@@ -45,6 +45,33 @@ EUU文件夹下的`software`目录中共有两个版本的工程项目，分别�
 
 ![](./figure/comp_res.jpg)
 
+另外，注意每个项目都会有两个Target，分别对应应用程序和协议栈，其中，应用程序无需再进行额外的操作，可以正常选择`Build`以及`Download`选项。
+
+![new_1](./figure/new_1.png)
+
+但是协议栈Target想要进行`Build`以及`Download`选项则需要注意以下几点：
+如果协议栈Target无法成功`Build`，可参考以下方法
+
+![new_2](./figure/new_2.png)
+
+![new_3](./figure/new_3.png)
+
+对协议栈下所有文件都进行此操作
+
+![new_4](./figure/new_4.png)
+
+如果协议栈Target无法成功`Download`，并出现如下报错
+
+![new_5](./figure/new_5.png)
+
+这是由于在未按上述步骤操作，直接进行`Build`选项后，协议栈内的.hex文件会被删除，从而无法成功进行`Download`。可选择通过手动添加该协议栈的.hex文件解决报错。
+
+最后是关于对于同一个项目，在`Keil`中进行`Erase`后无法再成功`Download`的情况，报错如下
+
+![new_6](./figure/new_6.png)
+
+这是由于在同一个协议栈Target下，`Erase`操作无法进行完全，可以通过用`Keil`打开另一个不同版本的`Nordic SDK`项目，在另一个不同名的协议栈下进行`Erase`操作，便可完全擦除。再次`Download`之前的协议栈便不会有此报错。
+
 ## 注意
 
 本项目默认使用`J-Link`下载代码到芯片，`Keil`同样支持使用`ST-Link`完成下载，但是请在下载前将`Debug`配置从`J-Link`换成`ST-Link`。
