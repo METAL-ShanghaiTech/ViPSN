@@ -41,6 +41,8 @@ In **EMU** folder, here is a PCB file.
 In **EUU** folder, this project provides the [Transmitter Part](.\EUU\software\EUU_trans\examples) and [Receive Part](.\EUU\software\Receiver). And [PCB file](.\EUU\pcb) is also included.  -->
 
 ## Related publications
+- Qiang Liu, Xin Li, Hao Zhang, Jing Ren*, Shuo Yang, Leitao Cao, Junrui Liang*, Shengjie Ling*, "IntelliSense silk fibroin ionotronic batteries for wildfire detection and alarm," Nano Energy, vol. 101, art. no. 107630, Oct. 2022.
+- Jianjun Wang*, Yalei Cao, Hongjun Xiang, Zhiwei Zhang, Junrui Liang, Xin Li, Deyun Ding, Teng Li, and Lihua Tang, "A piezoelectric smart backing ring for high-performance power generation subject to train induced steel-spring fulcrum forces," Energy Conversion and Management, vol. 257, art. no. 115442, 2022.
 - Jinxi Zhang, Shaobo Gong, Xin Li, Junrui Liang, Zhong Lin Wang*, and Kailiang Ren*, "A wind‐driven poly (tetrafluoroethylene) electret and polylactide polymer‐based hybrid nanogenerator for self‐powered temperature detection system," Advanced Sustainable Systems, art. no. 2000192. 2021.
 - Xin Li, Li Teng, Hong Tang, Haoyu Wang, Yu Liu, Minfan Fu, and Junrui Liang*, “ViPSN: a vibration-powered IoT platform,” IEEE Internet of Things Journal, vol. 8, no. 3, pp. 1728-1739, 2021. <a name="divtop"></a>
 - Xin Li, Hong Tang, Yiyao Zhu and Junrui Liang*, “Power solution of a vibration-powered sensing node,” Proceedings of the 9th International Power Electronics and Motion Control Conference, Nanjing, China, May 31-June 3, 2020. (IPEMC - ECCE Asia 2020). <a name="divtop2"></a>
@@ -61,7 +63,7 @@ This research was supported by the grants from the National Natural Science Foun
 ## License
 ```
 Apache License
-Copyright 2020 Xin Li, Hong Tang, and Junrui Liang*, ShanghaiTech University.
+Copyright 2020 Xin Li and Junrui Liang.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -76,6 +78,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 ## Contact
-If you have technical problems, please contact: lixin1@shanghaitech.edu.cn or tanghong@shanghaitech.edu.cn.
+If you have technical problems, please contact: lixin1@shanghaitech.edu.cn or china.lixin1@gmail.com.
 
 For business cooperation, please contact: liangjr@shanghaitech.edu.cn.
